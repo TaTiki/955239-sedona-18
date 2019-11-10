@@ -1,75 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="main-header">
-          <nav class="main-menu__menu-button">
 
-            <ul class="main-menu__list">
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Главная</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Фото и видео</a>
-              </li>
-              <li class="main-menu__item main-menu__item--active">
-                <a class="main-menu__link main-menu">Форма отзыва</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
-          <span class="main-header__top">
-          <a href="main-header__logo">
-              <img class="main-header__logo-picture" width="102" height="83" src="https://via.placeholder.com/150x150" alt="City of Sedona">
-          </a>
-          <button class="burger-button"></button>
-        </span>
-        <div class="main-header__intro">
-            <section class="info__section">
-                <div class="info__section__image info-section__image">
-                  <img width="461" height="80" class="info-section__index-text info-section__index-text--shorter" src = " b.png " alt="Sedona slogan">
-                </div>
-              </section>
-        </div>
-      </header>
-      <main>
-          <div class="promo">
-              <h1 class="promo__title"></h1>
-              <p class="promo-description">
-                </p>
-            </div>
-        <section class="info-section">
-          <div class="info-section__image">
-            <img class="info-section__index-text" src="https://via.placeholder.com/150x150" alt="Sedona slogan">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-menu__menu-button">
+
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-menu__item main-menu__item--active">
+          <a class="main-menu__link main-menu">Форма отзыва</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-header__top">
+      <a href="main-header__logo">
+        <img class="main-header__logo-picture" width="102" height="83" src="https://via.placeholder.com/150x150"
+          alt="City of Sedona">
+      </a>
+      <button class="burger-button" aria-label="Открыть меню"></button>
+    </div>
+    <div class="main-header__intro">
+      <img src="https://via.placeholder.com/150x150" width="461" height="80" alt="Sedona slogan">
+    </div>
+  </header>
+  <main>
+    <div class="promo">
+      <h1 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="promo-description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
+      </p>
+    </div>
+    <section class="features">
+      <ul class="features__list">
+        <li class="features__item">
+          <div class="features__info">
+            <h2 class="features__title">Настоящий городок</h2>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <section class="info-section__facts">
-            <h2 class="info-section__title">
-              Седона — небольшой
-              городок&nbsp;в&nbsp;Аризоне,
-              заслуживающий большего!</h2>
-            <p class = "info-section__reasons">
-              Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
-            </p>
-          </section>
-        </section>
-</div>
-          <section class="features">
-              <ul class="advantages__list">
-                  <li class="features__item">
-                    <div class="features__info">
-                      <h2 class="features__title">Настоящий городок</h2>
-                      <p class="features__counter">&mdash; №1 &mdash;</p>
-                      <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                    </div>
-                    <div class="features__image">
-                      <img width="800" height="255" alt="Настоящий городок" src="https://via.placeholder.com/150x150">
-                    </div>
-              <ul class="features__sublist">
+          <div class="features__image">
+            <img width="800" height="255" alt="Настоящий городок" src="https://via.placeholder.com/150x150">
+          </div>
+          <ul class="features__sublist">
             <li class="features__item">
               <h2 class="features__title">Жилье</h2>
               <p class="features__text">Рекомендуем пожить в
@@ -87,57 +70,59 @@
               <p class="features__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
                 Вы НЕ разочаруетесь!</p>
             </li>
-              </ul>
-                  </li>
-          <li class="feature-item">
-            <div class="feature__fact"></div>
-              <h2 class="feature__title">Там есть мост&nbsp;дьявола</h2>
-              <p class="feature__text">— №2 —</p>
-              <p class="feature__text">Да, по нему можно пройти! Если вы
-              осмелитесь, конечно</p>
-            </div>
-          <div class="feature__image">
-                <img class="feature__picture" width="320" height="260" src = "https://via.placeholder.com/150x150" alt="Picture 0f Sedona">
-            </div>
-          </li>
-
-          <li class="feature">
-              <h2 class="feature__title">Небольшая площадь</h2>
-              <p class="feature__text">— №3 —</p>
-              <p class="feature__text">Все достопримечательности
-                находятся очень близко</p>
-          </li>
-          <li class="feature">
-              <h2 class="feature__title">Красивая дорога</h2>
-              <p class="feature__text">— №4 —</p>
-              <p class="feature__text">Ехать в Седону из Лас-Вегаса
-                совсем не&nbsp;скучно!</p>
-              </li>
-              <li class="feature">
-              <h2 class="feature__title">Мало туристов</h2>
-              <p class="feature__text">— №5 —</p>
-              <p class="feature__text">Большинство едет в Гранд Каньон
-                и толпится там</p>
-              </li>
           </ul>
-          </section>
-          </main>
-          <footer class="main-footer">
-              <div class="main-footer__social social">
-                  <a class="main-footer__social-link" href="#" aria-label="Седона в Twitter">
-                    <img class="main-footer__social-button-icon" src = "https://via.placeholder.com/150x150" alt="Picture">
-                    </a>
-                  <a class="main-footer__social-button" href="#" aria-label="Седона в Facebook">
-                    <img class="main-footer__social-button-icon" src = "https://via.placeholder.com/150x150" alt="Picture">
-                    </a>
-                  <a class="main-footer__social-button" href="#" aria-label="Седона в YouTube">
-                    <img class="main-footer__social-button-icon" src = "https://via.placeholder.com/150x150" alt="Picture">
-                    </a>
-                </div>
-                <p class="main-footer__copyright copyright">
-                  Разработано<a class="main-footer__copyright-link" href="#">
-                    в HTML Academy</a>
-                </p>
-            </footer>
+        </li>
+        <li class="features__item">
+          <h2 class="features__title">Там есть мост&nbsp;дьявола</h2>
+          <p class="features__text">— №2 —</p>
+          <p class="features__text">Да, по нему можно пройти! Если вы
+            осмелитесь, конечно</p>
+          <div class="features__image">
+            <img class="features__picture" width="320" height="260" src="https://via.placeholder.com/150x150"
+              alt="Picture 0f Sedona">
+          </div>
+        </li>
+
+        <li class="features__item">
+          <h2 class="features__title">Небольшая площадь</h2>
+          <p class="features__text">— №3 —</p>
+          <p class="features__text">Все достопримечательности
+            находятся очень близко</p>
+        </li>
+        <li class="features__item">
+          <h2 class="features__title">Красивая дорога</h2>
+          <p class="features__text">— №4 —</p>
+          <p class="features__text">Ехать в Седону из Лас-Вегаса
+            совсем не&nbsp;скучно!</p>
+        </li>
+        <li class="features__item">
+          <h2 class="features__title">Мало туристов</h2>
+          <p class="features__text">— №5 —</p>
+          <p class="features__text">Большинство едет в Гранд Каньон
+            и толпится там</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__social social">
+      <a class="social-link" href="#" aria-label="Седона в Twitter">
+        <img class="main-footer__social-button-icon" src="https://via.placeholder.com/150x150" alt="Picture">
+      </a>
+      <a class="social-link" href="#" aria-label="Седона в Facebook">
+        <img class="main-footer__social-button-icon" src="https://via.placeholder.com/150x150" alt="Picture">
+
+      </a>
+      <a class="social-link" href="#" aria-label="Седона в YouTube">
+        <img class="main-footer__social-button-icon" src="https://via.placeholder.com/150x150" alt="Picture">
+
+      </a>
+    </div>
+    <p class="main-footer__copyright copyright">
+      Разработано в<a class="main-footer__copyright-link" href="#">
+        HTML Academy</a>
+    </p>
+  </footer>
 </body>
+
 </html>
