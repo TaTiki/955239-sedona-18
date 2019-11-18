@@ -82,7 +82,7 @@
   fill: currentColor;
 }
 
-@media #{$tablet-widths} {
+@media (min-width: $tablet-width) {
   .main-footer {
     display: flex;
     position: relative;
@@ -111,7 +111,7 @@
   }
 }
 
-@media #{$desktop-widths} {
+@media (min-width: $desktop-width) {
   .main-footer {
     width: 1200px;
 
