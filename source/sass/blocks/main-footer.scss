@@ -41,7 +41,7 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -74,7 +74,7 @@
   }
 
   &:active {
-    color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -120,7 +120,6 @@
   }
 
   .main-footer__copyright {
-
     &--form-margin {
       margin-right: 76px;
     }

@@ -25,6 +25,7 @@
   &:hover {
     background-color: #669ec0;
   }
+}
 
 .main-menu__link {
   text-decoration: none;
@@ -33,7 +34,7 @@
   &:active {
     color: rgba(255, 255, 255, .3);
   }
-
+}
 .main-menu__list {
   display: flex;
   width: 768px;
