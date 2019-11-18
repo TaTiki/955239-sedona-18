@@ -1,0 +1,128 @@
+.main-footer {
+  text-transform: uppercase;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+
+  @include container;
+
+  padding-top: 36px;
+  padding-bottom: 23px;
+}
+
+.main-footer__title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.main-footer__social {
+  display: flex;
+  height: 48px;
+  width: 151px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.main-footer__social-button {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  background-color: $main-bg-color;
+  font-size: 0;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, .3);
+  }
+}
+
+.main-footer__social-button-icon {
+  fill: currentColor;
+}
+
+.main-footer__copyright {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 37px;
+  // margin-bottom: 23px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer__copyright-icon {
+  // display: inline-block;
+  width: 27px;
+  height: 34px;
+  font-size: 0;
+  margin-left: 11px;
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, .3);
+  }
+}
+
+.main-footer__copyright-image {
+  fill: currentColor;
+}
+
+@media #{$tablet-widths} {
+  .main-footer {
+    display: flex;
+    position: relative;
+    height: 120px;
+    width: 768px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 0 60px;
+  }
+
+  .main-footer__title {
+    margin: 0;
+  }
+
+  .main-footer__copyright {
+    margin: 0;
+  }
+
+  .main-footer__social {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-footer {
+    width: 1200px;
+
+    padding-left: 132px;
+    padding-right: 44px;
+  }
+
+  .main-footer__copyright {
+
+    &--form-margin {
+      margin-right: 76px;
+    }
+  }
+}

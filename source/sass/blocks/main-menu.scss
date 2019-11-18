@@ -1,0 +1,40 @@
+.main-menu {
+  display: none;
+  min-width: 320px;
+}
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+}
+.main-menu__item {
+  display: flex;
+  height: 56px;
+  position: relative;
+  background-color:  $main-bg-color;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid $menu-bottom-border-color;
+  font-family: $basic-font-family;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+.main-menu__link {
+  text-decoration: none;
+  color: $menu-font-color;
+
+  &:active {
+    color: rgba(255, 255, 255, .3);
+  }
+
+ .main-menu__list {
+    display: flex;
+    width: 768px;
+  }
