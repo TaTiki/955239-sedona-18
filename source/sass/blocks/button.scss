@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  border: 0;
+  background-color: $light-grey-blue;
+  color: #ffffff;
+  font-family: $basic-font-family;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $faded-blue;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
+}

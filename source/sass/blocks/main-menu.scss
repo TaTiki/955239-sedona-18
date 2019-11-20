@@ -1,0 +1,37 @@
+.main-menu {
+  display: none;
+  min-width: 320px;
+}
+
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu__item {
+  display: flex;
+  height: 56px;
+  position: relative;
+  background-color: $light-grey-blue;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid $faded-blue;
+  font-family: $basic-font-family;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+}
+
+.main-menu__link {
+  text-decoration: none;
+  color: $white;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
