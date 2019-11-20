@@ -8,18 +8,14 @@
 
 .features__title {
   position: relative;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
+  @include font-set(18px, 26px, 700);
   color: #000000;
   margin: 0;
   margin-bottom: 14px;
 }
 
 .features__text {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
+  @include font-set(14px, 21px);
   color: #333333;
   margin: 0;
   margin-bottom: 27px;

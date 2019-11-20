@@ -2,6 +2,12 @@ html {
   height: 100%;
 }
 
+  *,
+  *::before,
+  *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -14,4 +20,5 @@ body {
   line-height: 24px;
   color: $black-shaft;
   background-color: $gray-concrete;
+  text-transform: uppercase;
 }

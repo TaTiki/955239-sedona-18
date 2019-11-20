@@ -6,12 +6,11 @@
   font-family: $basic-font-family;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   text-transform: uppercase;
   cursor: pointer;
 
   &:hover {
-    background-color: #669ec0;
+    background-color: $faded-blue;
   }
 
   &:active {
@@ -22,9 +21,4 @@
     color: #ffffff;
     background-color: #e5e5e5;
   }
-}
-
-.button__text {
-  margin-left: auto;
-  margin-right: auto;
 }

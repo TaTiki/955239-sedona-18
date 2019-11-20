@@ -2,7 +2,6 @@
   padding-top: 30px;
   padding-bottom: 49px;
   text-transform: uppercase;
-  margin: 0 auto;
 }
 
 .apointment__title {
@@ -15,10 +14,8 @@
 }
 
 .apointment__text {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #333333;
+  @include font-set(14px, 24px, 400);
+  color: $black-shaft;
   margin-top: 0;
   margin-bottom: 35px;
 }

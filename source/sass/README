@@ -2,6 +2,10 @@
 
 https://sass-lang.com
 
-body {
-   background: red;
-   }
+--
+
+Структура файлов:
+
+sass/
+| - style.scss
+| - [другие *.scss файлы]

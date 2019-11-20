@@ -6,6 +6,7 @@
 .main-menu__list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .main-menu__item {
@@ -19,10 +20,7 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
-  text-transform: uppercase;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+  text-align: center;
 
   &:hover {
     background-color: #669ec0;
