@@ -7,8 +7,8 @@
 }
 
 .features__title {
-  position: relative;
   @include font-set(18px, 26px, 700);
+  position: relative;
   color: #000000;
   margin: 0;
   margin-bottom: 14px;
