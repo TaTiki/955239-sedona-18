@@ -3,7 +3,7 @@
   min-width: 320px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .main-menu {
     display: block;
   }
@@ -15,7 +15,7 @@
   list-style: none;
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .main-menu__list {
     width: 1200px;
   }

@@ -6,11 +6,16 @@
   background-color: #f1f1f1;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
+  .body {
   width: 768px;
+  }
 }
 
-@media (min-width:$desktop-width) {
+
+@media (min-width: $desktop-width) {
+  .body {
   width: 1200px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
 }
