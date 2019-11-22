@@ -10,10 +10,11 @@
     display: flex;
     font-size: 0;
   }
-    &--befor-border::before {
-      display: none;
-    }
+
+  &--befor-border::before {
+    display: none;
   }
+}
 
 .features__title {
   padding-top: 41px;
