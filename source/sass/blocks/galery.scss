@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-@media #{$tablet-widths} {
+@media (min-width:$tablet-width) {
   .gallery-content {
     width: 648px;
     display: flex;
@@ -14,7 +14,7 @@
   }
 }
 
-@media #{$desktop-widths} {
+@media (min-width:$desktop-width) {
   .gallery-content {
     width: 1200px;
   }

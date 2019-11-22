@@ -27,7 +27,7 @@
   font-weight: 700;
 }
 
-@media #{$tablet-widths} {
+@media (min-width:$tablet-width) {
   .apointment {
     width: 458px;
     padding-top: 56px;

@@ -4,18 +4,21 @@
   flex-wrap: wrap;
   margin: 0 auto;
   background-color: #ffffff;
-
-  @media #{$tablet-widths} {
+}
+  @media (min-width:$tablet-width) {
+    .main-header {
     height: 56px;
   }
 }
 
-@media #{$tablet-widths} {
+@media (min-width:$tablet-width) {
+  .main-header{
   position: absolute;
   margin-bottom: 0;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  }
 }
 
 .main-header__logo {
@@ -24,7 +27,7 @@
   left: 110px;
 }
 
-@media #{$desktop-widths} {
+@media (min-width:$desktop-width) {
   .main-header__logo {
     width: 188px;
     height: 96px;

@@ -4,7 +4,7 @@
   text-align: left;
 }
 
-@media #{$tablet-widths} {
+@media (min-width:$tablet-width) {
   .feedback-form {
     display: flex;
     width: 648px;
