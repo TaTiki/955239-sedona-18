@@ -16,12 +16,22 @@
   left: 50%;
   transform: translateX(-50%);
   }
-}
 
 .main-header__logo {
   position: relative;
   margin-bottom: -30px;
   left: 110px;
+}
+
+@media #{$desktop-widths} {
+  .main-header__logo {
+    width: 188px;
+    height: 96px;
+  }
+  .main-header__logo-picture {
+    width: auto;
+    height: auto;
+  }
 }
 
 .main-header__logo-picture {
