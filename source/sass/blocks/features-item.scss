@@ -5,6 +5,16 @@
   background-color: #d6d6d6;
 }
 
+@media #{$tablet-widths} {
+  .features-item {
+    display: flex;
+    font-size: 0;
+
+    &--befor-border::before {
+      display: none;
+    }
+  }
+
 .features__title {
   padding-top: 41px;
   line-height: 26px;

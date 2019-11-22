@@ -5,3 +5,17 @@
   overflow: hidden;
   background-color: #f4f3f0;
 }
+
+@media #{$tablet-widths} {
+  .map,
+  .map__picture {
+    width: 768px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .map,
+  .map__picture {
+    width: 1200px;
+  }
+}

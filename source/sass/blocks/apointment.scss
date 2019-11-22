@@ -26,3 +26,10 @@
   line-height: 26px;
   font-weight: 700;
 }
+
+@media #{$tablet-widths} {
+  .apointment
+    width: 458px;
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }

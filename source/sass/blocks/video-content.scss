@@ -6,6 +6,17 @@
   padding-bottom: 60px;
 }
 
+@media #{$tablet-widths} {
+  .video-content {
+    padding-top: 68px;
+    padding-bottom: 38px;
+    margin: 0 auto;
+
+    &::before {
+      display: none;
+    }
+  }
+
 .video-content__title {
   font-size: 18px;
   font-weight: 700;

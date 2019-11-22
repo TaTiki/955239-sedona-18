@@ -4,6 +4,15 @@
   text-align: left;
 }
 
+@media #{$tablet-widths} {
+  .feedback-form {
+    display: flex;
+    width: 648px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
 .feedback-form__contact-info {
   position: relative;
   border: 0;

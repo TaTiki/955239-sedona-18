@@ -3,11 +3,21 @@
   min-width: 320px;
 }
 
+@media #{$tablet-widths} {
+  .main-menu {
+    display: block;
+  }
+
 .main-menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+@media #{$desktop-widths} {
+  .main-menu__list {
+    width: 1200px;
+  }
 
 .main-menu__item {
   display: flex;

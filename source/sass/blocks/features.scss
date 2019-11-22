@@ -6,6 +6,14 @@
   padding-bottom: 5px;
 }
 
+@media #{$tablet-widths} {
+  .features {
+    display: flex;
+    padding: 0;
+    padding-top: 0;
+    justify-content: center;
+  }
+
 .features__title {
   @include font-set(18px, 26px, 700);
   position: relative;

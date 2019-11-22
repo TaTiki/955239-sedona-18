@@ -4,11 +4,24 @@
   color: #000000;
   background-color: #ffffff;
 
-  @include container;
+@include container;
 
   padding-top: 36px;
   padding-bottom: 23px;
 }
+
+@media #{$tablet-widths} {
+  .main-footer {
+    display: flex;
+    position: relative;
+    height: 120px;
+    width: 768px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 0 60px;
+  }
 
 .main-footer__title {
   font-size: 21px;
