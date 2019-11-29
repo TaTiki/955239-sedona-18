@@ -4,7 +4,7 @@
   width: 280px;
   background-color: $gray-iron;
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     font-size: 0;
   }

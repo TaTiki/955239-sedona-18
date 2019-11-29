@@ -1,7 +1,7 @@
 .features {
   font-family: $basic-font-family;
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     padding: 0;
     padding-top: 0;
@@ -66,7 +66,7 @@
   font-size: 14px;
 }
 
-.features__title--white{
+.features__title--white {
   color: $white;
   font-size: 18px;
   line-height: 1.44;

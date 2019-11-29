@@ -13,11 +13,6 @@
 }
 
 .main-header__logo-picture {
-  width: auto;
-  height: auto;
-}
-
-.main-header__logo-picture {
   width: 120px;
   height: auto;
 }
@@ -31,7 +26,7 @@
 
 .main-header__intro {
   min-height: 280px;
-  background-image: url(../img/bg-back-desktop@1x.jpg);
+  background-image: url(/img/bg-back-desktop@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -40,7 +35,7 @@
   align-items: center;
 }
 
-.main-header__title{
+.main-header__title {
   width: 461px;
   height: 80px;
 }
