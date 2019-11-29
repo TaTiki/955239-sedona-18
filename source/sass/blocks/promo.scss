@@ -3,22 +3,21 @@
   font-family: $basic-font-family;
   font-size: 14px;
   line-height: 24px;
-  text-align: left;
+  text-align: center;
+  padding-top: 0;
 }
 
-@media (min-width: $tablet-width) {
-  .promo {
-    padding: 0;
-    width: 324px;
-    height: 347px;
-  }
+.promo__description {
+    margin-bottom: 0;
+    font-size: 14px;
+}
 
-  &:first-child {
-    width: 648px;
-    height: 480px;
-  }
-
-  &::before {
-    display: none;
-  }
+.promo__title{
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  position: relative;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 14px;
 }
