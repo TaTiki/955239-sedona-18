@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-menu">
+      <div class="page-wrapper">
+    <header class="main-header">
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li class="main-menu__item">
@@ -24,13 +26,13 @@
         </ul>
       </nav>
       <div class="main-header__top">
-        <a href="main-header__logo">
+        <a class="main-header__logo">
                 <img class="main-header__logo-picture" width="102" height="83" src="img/logo-sedona-desktop.svg" alt="Sedona slogan">
         </a>
         <button class="burger-button" aria-label="Открыть меню"></button>
       </div>
       <div class="main-header__intro">
-        <img src="img/bg-back-desktop@1x.jpg" width="461" height="80" alt="City of Sedona">
+        <img class="main-header__title"  src="text-sedona-index.svg" width="461" height="80" alt="City of Sedona">
       </div>
     </header>
     <main>
@@ -39,10 +41,11 @@
         <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </div>
       <section class="features">
-        <ul class="features__list">
+        <ol class="features__list">
           <li class="features__item">
             <div class="features__info">
-              <h2 class="features__title">Настоящий городок</h2>
+              <h2 class="features__title--white">Настоящий городок</h2>
+              <div class="features__number"></div>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="features__image">
@@ -67,65 +70,40 @@
             </ul>
           </li>
           <li class="features__item">
-            <h2 class="features__title">Там есть мост&nbsp;дьявола</h2>
-            <p class="features__text">— №2 —</p>
-            <p class="features__text">Да, по нему можно пройти! Если вы
+              <div class="features__info">
+            <h2 class="features__title--white">Там есть мост дьявола</h2>
+            <div class="features__number"></div>
+            <p>Да, по нему можно пройти! Если вы
               осмелитесь, конечно</p>
+              </div>
             <div class="features__image">
-                    <img class="feature__picture" width="320" height="260" src="img/main-bridge-desktop@1x.jpg" alt="bridge Devil">
+                    <img class="features__picture" width="320" height="260" src="img/main-bridge-desktop@1x.jpg" alt="bridge Devil">
             </div>
           </li>
           <li class="features__item">
             <h2 class="features__title">Небольшая площадь</h2>
-            <p class="features__text">— №3 —</p>
+            <div class="features__number"></div>
             <p class="features__text">Все достопримечательности
               находятся очень близко</p>
           </li>
           <li class="features__item">
             <h2 class="features__title">Красивая дорога</h2>
-            <p class="features__text">— №4 —</p>
+            <div class="features__number"></div>
             <p class="features__text">Ехать в Седону из Лас-Вегаса
-              совсем не&nbsp;скучно!</p>
+              совсем не скучно!</p>
           </li>
           <li class="features__item">
             <h2 class="features__title">Мало туристов</h2>
-            <p class="features__text">— №5 —</p>
+            <div class="features__number"></div>
             <p class="features__text">Большинство едет в Гранд Каньон
               и толпится там</p>
           </li>
-        </ul>
+        </ol>
       </section>
       <section class="apointment">
         <h2 class="apointment__title">Заинтересовались?</h2>
         <p> Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="apointment__button">Поиск гостиницы в Седоне</button>
-        <form class="apointment search-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="apointment__line">
-            <label for="apointment__entry">Дата заезда:</label>
-            <input name="apointment__checkin" class="booking" id="entry" type="text" value="24 апреля 2017" />
-            <button class="apointment__calendar" type="button" aria-label="Выбрать дату"></button>
-          </p>
-          <p class="apointment__line">
-            <label for="apointment__departure">Дата выезда:</label>
-            <input name="apointment__checkin" class="booking" id="departure" type="text" value="4 июля 2017">
-            <button class="apointment__calendar" type="button" aria-label="Выбрать дату"></button>
-          </p>
-          <div class="apointment__humans">
-            <p class="apointment__line-half">
-              <label for="apointment__adult">Взрослые:</label>
-              <button class="apointment__icon-minus" type="button" aria-label="Уменьшить"></button>
-              <input name="apointment__adults" class="booking-calendar-select" id="adult" type="number" value="2">
-              <button class="apointment__icon-plus" type="button" aria-label="Увеличить"></button>
-            </p>
-            <p class="apointment__line-half">
-              <label for="apointment__children">Дети:</label>
-              <button class="apointment__icon-minus" type="button" aria-label="Уменьшить"></button>
-              <input name="apointment__children" class="booking-calendar-select" id="children" type="number" value="0">
-              <button class="apointment__icon-plus" type="button" aria-label="Увеличить"></button>
-            </p>
-          </div>
-          <button class="apointment__button button" type="submit">Найти</button>
-        </form>
+        <button class="apointment__button button">Найти гостиницу</button>
       </section>
       <div class="map">
         <iframe allowfullscreen="" height="588"
@@ -146,9 +124,10 @@
         </a>
       </div>
       <p class="main-footer__copyright copyright">
-        Разработано в<a class="copyright-link" href="#">
+        Разработано в <a class="copyright-link" href="#">
           HTML Academy</a>
       </p>
     </footer>
+      </div>
   </body>
 </html>

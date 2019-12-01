@@ -1,19 +1,11 @@
 .features-item {
   position: relative;
-  color: #ffffff;
+  color: $white;
   width: 280px;
-  background-color: #d6d6d6;
-}
+  background-color: $gray-iron;
 
-.features__title {
-  padding-top: 41px;
-  line-height: 26px;
-  font-size: 18px;
-  margin: 0;
-}
-
-.features__text {
-  font-size: 14px;
-  margin: 0;
-  margin-top: 11px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    font-size: 0;
+  }
 }

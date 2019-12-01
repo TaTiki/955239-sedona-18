@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  box-sizing: border-box;
 }
 
 *,
@@ -9,7 +10,8 @@ html {
 }
 
 body {
-  margin: 0;
+  counter-reset: section;
+  margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
   display: flex;
@@ -21,4 +23,9 @@ body {
   color: $black-shaft;
   background-color: $gray-concrete;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
 }

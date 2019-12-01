@@ -1,9 +1,12 @@
 .features {
   font-family: $basic-font-family;
-  text-transform: uppercase;
-  padding-top: 35px;
-  padding-left: 0;
-  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0;
+    padding-top: 0;
+    justify-content: center;
+  }
 }
 
 .features__title {
@@ -12,6 +15,7 @@
   color: #000000;
   margin: 0;
   margin-bottom: 14px;
+  padding-top: 41px;
 }
 
 .features__text {
@@ -19,4 +23,52 @@
   color: #333333;
   margin: 0;
   margin-bottom: 27px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.features__sublist {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features__info {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $white;
+  margin: 0;
+}
+
+.features__info:nth-child(1) {
+  background: $light-grey-blue;
+  padding-bottom: 30px;
+}
+
+.features__info:nth-child(2) {
+  background: $light-grey-blue;
+}
+
+.features__number::before {
+  counter-increment: section;
+  content: "−№" counter(section) "−";
+  font-size: 14px;
+}
+
+.features__title--white {
+  color: $white;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
 }

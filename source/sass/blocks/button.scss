@@ -6,8 +6,8 @@
   font-family: $basic-font-family;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
   cursor: pointer;
+  margin-left: 20%;
 
   &:hover {
     background-color: $faded-blue;

@@ -1,7 +1,23 @@
-.picture {
+.promo {
   position: relative;
   font-family: $basic-font-family;
   font-size: 14px;
   line-height: 24px;
-  text-align: left;
+  text-align: center;
+  padding-top: 0;
+}
+
+.promo__description {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.promo__title {
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  position: relative;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 14px;
 }

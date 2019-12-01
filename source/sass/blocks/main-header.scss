@@ -1,18 +1,41 @@
 .main-header {
   display: flex;
-  position: relative;
   flex-wrap: wrap;
   margin: 0 auto;
   background-color: #ffffff;
 }
 
 .main-header__logo {
-  position: relative;
-  margin-bottom: -30px;
-  left: 110px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }
 
 .main-header__logo-picture {
-  width: auto;
+  width: 120px;
   height: auto;
+}
+
+.main-header__top {
+  width: 100%;
+  background: $white;
+  height: 55px;
+  position: relative;
+}
+
+.main-header__intro {
+  min-height: 280px;
+  background-image: url("../img/bg-back-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header__title {
+  width: 461px;
+  height: 80px;
 }
