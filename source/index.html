@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <div class="page-wrapper">
     <header class="main-header">
-      <nav class="main-menu">
+      <nav class="main-menu main-menu__opened">
+          <button class="main-menu__close-button" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
         <ul class="main-menu__list">
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">Главная</a>
@@ -32,7 +36,7 @@
         <button class="burger-button" aria-label="Открыть меню"></button>
       </div>
       <div class="main-header__intro">
-        <img class="main-header__title"  src="text-sedona-index.svg" width="461" height="80" alt="City of Sedona">
+        <img class="main-header__title" src="img/text-sedona-index.svg" width="280" height="213" alt="City of Sedona">
       </div>
     </header>
     <main>
@@ -46,26 +50,26 @@
             <div class="features__info">
               <h2 class="features__title--white">Настоящий городок</h2>
               <div class="features__number"></div>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="features__text--white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="features__image">
-                    <img class="feature__picture" width="320" height="260" src="img/main-city-desktop@1x.jpg" alt="Picture 0f Sedona">
+                    <img class="features__picture" width="320" height="260" src="img/main-city-desktop@1x.jpg" alt="Picture 0f Sedona">
             </div>
             <ul class="features__sublist">
               <li class="features__item">
-                <h2 class="features__title">Жилье</h2>
+                <h2 class="features__title--home">Жилье</h2>
                 <p class="features__text">Рекомендуем пожить в
                   настоящем мотеле, все как в
                   кино!</p>
               </li>
               <li class="features__item">
-                <h2 class="features__title">Сувениры</h2>
-                <p class="features__text">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="features__item">
-                <h2 class="features__title">Еда</h2>
+                <h2 class="features__title--food">Еда</h2>
                 <p class="features__text">Всегда заказывайте фирменный бургер,
                   вы не разочаруетесь!</p>
+              </li>
+              <li class="features__item">
+                <h2 class="features__title--gift">Сувениры</h2>
+                <p class="features__text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
@@ -73,13 +77,14 @@
               <div class="features__info">
             <h2 class="features__title--white">Там есть мост дьявола</h2>
             <div class="features__number"></div>
-            <p>Да, по нему можно пройти! Если вы
+            <p class="features__text--white">Да, по нему можно пройти! Если вы
               осмелитесь, конечно</p>
               </div>
             <div class="features__image">
                     <img class="features__picture" width="320" height="260" src="img/main-bridge-desktop@1x.jpg" alt="bridge Devil">
             </div>
           </li>
+          <div class="features__item--horizontaly">
           <li class="features__item">
             <h2 class="features__title">Небольшая площадь</h2>
             <div class="features__number"></div>
@@ -98,6 +103,7 @@
             <p class="features__text">Большинство едет в Гранд Каньон
               и толпится там</p>
           </li>
+          </div>
         </ol>
       </section>
       <section class="apointment">
@@ -114,18 +120,19 @@
     <footer class="main-footer">
       <div class="main-footer__social social">
         <a class="social__link" href="#" aria-label="Седона в Twitter">
-          <img class="social__icon" src="img/icon-twitter.svg" alt="Picture">
+          <img class="social__icon--twitter" src="img/icon-twitter.svg" alt="Picture">
         </a>
         <a class="social__link" href="#" aria-label="Седона в Facebook">
-          <img class="social__icon" src="img/icon-facebook.svg" alt="Picture">
+          <img class="social__icon--facebook" src="img/icon-facebook.svg" alt="Picture">
         </a>
         <a class="social__link" href="#" aria-label="Седона в YouTube">
-          <img class="social__icon" src="img/icon-youtube.svg" alt="Picture">
+          <img class="social__icon--youtube" src="img/icon-youtube.svg" alt="Picture">
         </a>
       </div>
       <p class="main-footer__copyright copyright">
-        Разработано в <a class="copyright-link" href="#">
-          HTML Academy</a>
+        Разработано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="117" height="48">
+        </a>
       </p>
     </footer>
       </div>

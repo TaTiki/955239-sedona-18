@@ -5,6 +5,7 @@
   line-height: 24px;
   text-align: center;
   padding-top: 0;
+  padding-bottom: 30px;
 }
 
 .promo__description {
@@ -20,4 +21,13 @@
   color: #000000;
   margin: 0;
   margin-bottom: 14px;
+  padding-top: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background: $white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

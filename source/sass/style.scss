@@ -1,4 +1,5 @@
-
+@import "normalize";
+@import "_visually-hidden";
 @import "_variables";
 @import "_mixins";
 @import "fonts";
@@ -16,4 +17,3 @@
 @import "blocks/promo";
 @import "blocks/apointment";
 @import "blocks/video-content";
-@import "blocks/page-wrapper";
