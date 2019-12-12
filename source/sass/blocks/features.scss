@@ -46,7 +46,6 @@
 .features__text {
   @include font-set(14px, 21px);
   color: #333333;
-  margin: 0;
   margin: 0 20px 0 61px;
   text-align: left;
 }
@@ -62,6 +61,7 @@
   margin: 12px 39px;
   line-height: 23px;
 }
+
 .features__list {
   margin: 0;
   padding: 0;
@@ -111,7 +111,7 @@
   padding-top: 46px;
 }
 
-.features__image{
+.features__image {
   width: auto;
 }
 
@@ -145,7 +145,7 @@
 
   .features__title {
     margin: 3px 87px 8px;
-    padding: 67px 0px 4px;
+    padding: 67px 0 4px;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;

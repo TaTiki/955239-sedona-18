@@ -45,7 +45,7 @@
 .main-menu__link:not([href]) {
   &:hover,
   &:focus {
-      background-color: $light-grey-blue;
+    background-color: $light-grey-blue;
   }
 }
 
@@ -61,7 +61,7 @@
     z-index: 2;
     width: 100%;
     height: 10px;
-    box-shadow: inset 0px -7px 10px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -7px 10px -5px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -136,13 +136,13 @@
     border-top: none;
   }
 
-  .main-menu__item:nth-child(1){
+  .main-menu__item:nth-child(1) {
     text-align: left;
   }
 
-  .main-menu__item:nth-child(2){
-  margin-right: 20%;
-  padding-left: 30px;
+  .main-menu__item:nth-child(2) {
+    margin-right: 20%;
+    padding-left: 30px;
   }
 
   .main-menu__item:nth-child(3) {
