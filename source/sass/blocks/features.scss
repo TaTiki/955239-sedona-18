@@ -58,7 +58,7 @@
 
 .features__text--white {
   color: $white;
-  margin: 12px 39px;
+  margin: 12px 21px;
   line-height: 23px;
 }
 
@@ -120,22 +120,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 23px 0 0;
+    margin: 0 0 -7px;
   }
 
   .features__info {
     width: 256px;
-    padding-top: 45px;
+    padding-top: 5px;
     text-align: center;
     padding-bottom: 2px;
   }
 
   .features__sublist {
     display: flex;
-  }
-
-  .features__item--horizontaly {
-    display: flex;
+    padding: 60px 0 51px;
   }
 
   .features__picture {

@@ -27,7 +27,9 @@
 @media (min-width: $tablet-width) {
   .promo {
     background: $white;
-    padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .promo__title {
+    padding-top: 50px;
   }
 }

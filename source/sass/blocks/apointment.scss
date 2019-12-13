@@ -34,22 +34,22 @@
 @media (min-width: $tablet-width) {
   .apointment {
     padding-top: 55px;
-    padding-bottom: 155px;
+    padding-bottom: 58px;
     margin: 0 auto;
     background-color: $white;
   }
 
   .apointment__button {
-    padding: 30px 30px;
+    padding: 24px 26px;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     text-align: center;
     border: 0;
     text-transform: uppercase;
-    width: 568px;
+    width: 455px;
     position: relative;
-    left: 30%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
