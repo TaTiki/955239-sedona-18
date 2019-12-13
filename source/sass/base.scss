@@ -25,7 +25,20 @@ body {
   text-transform: uppercase;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+  }
+
   @media (min-width: $desktop-width) {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
+}
+
+.page-wrapper {
+  @include container;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
 }

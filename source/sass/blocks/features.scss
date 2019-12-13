@@ -9,20 +9,57 @@
   }
 }
 
+.features__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 23px 0 0;
+}
+
 .features__title {
   @include font-set(18px, 26px, 700);
   position: relative;
   color: #000000;
-  margin: 0;
-  margin-bottom: 14px;
-  padding-top: 41px;
+  margin: 0 0 0 54px;
+  padding-bottom: 14px;
+  padding-top: 60px;
+}
+
+.features__title--home {
+  text-align: right;
+  font-size: 21px;
+  margin-left: 60px;
+}
+
+.features__title--food {
+  text-align: right;
+  font-size: 21px;
+  margin-left: 60px;
+}
+
+.features__title--gift {
+  text-align: right;
+  font-size: 21px;
+  margin-left: 60px;
 }
 
 .features__text {
   @include font-set(14px, 21px);
   color: #333333;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 0 20px 0 61px;
+  text-align: left;
+}
+
+.features__item--horizontaly {
+  text-align: center;
+  background: $gray-gallery-ea;
+  padding-bottom: 30px;
+}
+
+.features__text--white {
+  color: $white;
+  margin: 12px 21px;
+  line-height: 23px;
 }
 
 .features__list {
@@ -40,8 +77,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .features__info {
@@ -53,7 +88,8 @@
 
 .features__info:nth-child(1) {
   background: $light-grey-blue;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
+  height: 258px;
 }
 
 .features__info:nth-child(2) {
@@ -61,14 +97,62 @@
 }
 
 .features__number::before {
+  display: list-item;
   counter-increment: section;
-  content: "−№" counter(section) "−";
+  content: "– №" counter(section) " –";
   font-size: 14px;
 }
 
 .features__title--white {
-  color: $white;
-  font-size: 18px;
-  line-height: 1.44;
-  font-weight: 700;
+  margin: 3px auto 23px;
+  max-width: 160px;
+  font-size: 21px;
+  line-height: 20px;
+  padding-top: 46px;
+}
+
+.features__image {
+  width: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 -7px;
+  }
+
+  .features__info {
+    width: 256px;
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 2px;
+  }
+
+  .features__sublist {
+    display: flex;
+    padding: 60px 0 51px;
+  }
+
+  .features__picture {
+    width: 512px;
+    height: 258px;
+  }
+
+  .features__title {
+    margin: 3px 87px 8px;
+    padding: 67px 0 4px;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .features__text {
+    margin: 0 auto 17px;
+    max-width: 163px;
+    line-height: 20px;
+  }
 }

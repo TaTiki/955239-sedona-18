@@ -36,6 +36,54 @@
 }
 
 .main-header__title {
-  width: 461px;
-  height: 80px;
+  width: 280px;
+  height: 213px;
+}
+
+.main-header__intro::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 58px;
+  left: 0;
+  bottom: 0;
+  background: url("../img/bg-intro-triangle-desktop.svg");
+  top: 89%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__top {
+    position: absolute;
+    background: none;
+  }
+
+  .main-header__logo-picture {
+    width: 100px;
+    height: auto;
+  }
+
+  .main-header__intro::after {
+    background-position: center;
+    top: 60%;
+    height: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__intro {
+    background-color: #96aac7;
+    padding: 74px 73px 72px;
+    min-height: 519px;
+    background-size: cover;
+    height: 54px;
+  }
+
+  .main-header__title {
+    width: 461px;
+    height: 360px;
+  }
+
+  .main-header__intro::after {
+    top: 90%;
+  }
 }

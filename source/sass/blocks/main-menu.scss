@@ -1,5 +1,5 @@
 .main-menu {
-  width: 100%;
+  @include container;
 }
 
 .main-menu__list {
@@ -25,11 +25,124 @@
   border-radius: 2px;
 }
 
+.main-menu__item:first-child a {
+  border-top: none;
+}
+
+.main-menu__item:last-child a {
+  border-bottom: none;
+}
+
 .main-menu__link {
   text-decoration: none;
   color: $white;
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.main-menu__link:not([href]) {
+  &:hover,
+  &:focus {
+    background-color: $light-grey-blue;
+  }
+}
+
+.main-menu__opened {
+  display: block;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 10px;
+    box-shadow: inset 0 -7px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.main-menu__close {
+  display: none;
+}
+
+.main-menu__close-button {
+  position: absolute;
+  content: "";
+  background-color: $light-grey-blue;
+  top: 17px;
+  right: 148px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 22px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu {
+    width: auto;
+    margin: 0;
+    height: 46px;
+  }
+
+  .main-menu__opened {
+    &::after {
+      display: none;
+    }
+  }
+
+  .main-menu__close-button {
+    display: none;
+  }
+
+  .main-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 767px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    background-color: white;
+  }
+
+  .main-menu__item {
+    width: 25%;
+    border: 0;
+    border-bottom: none;
+    border-top: none;
+    text-align: center;
+    padding: 10px 0 10px;
+  }
+
+  .main-menu__link {
+    line-height: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $black;
+    background: $white;
   }
 }

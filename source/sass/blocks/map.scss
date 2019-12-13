@@ -5,3 +5,24 @@
   overflow: hidden;
   background-color: #f4f3f0;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: $tablet-width;
+  }
+
+  .map__picture {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: $desktop-width;
+  }
+
+  .map__picture {
+    width: $desktop-width;
+  }
+}
