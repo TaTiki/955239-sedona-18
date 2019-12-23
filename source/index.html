@@ -10,8 +10,8 @@
   <body>
       <div class="page-wrapper">
     <header class="main-header">
-      <nav class="main-menu main-menu__opened">
-          <button class="main-menu__close-button" type="button">
+      <nav class="main-menu">
+          <button class="main-menu main-menu--close-button" type="button">
               <span class="visually-hidden">Закрыть меню</span>
             </button>
         <ul class="main-menu__list">
@@ -46,64 +46,60 @@
       </div>
       <section class="features">
         <ol class="features__list">
-          <li class="features__item">
-            <div class="features__info">
-              <h2 class="features__title--white">Настоящий городок</h2>
-              <div class="features__number"></div>
-              <p class="features__text--white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="features__item features__item--wide">
+            <div class="features__info features__info--blue features__info--triangle">
+            <div class="features__info-wrapper">
+                <h2 class="features__title">Настоящий городок</h2>
+                <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             </div>
             <div class="features__image">
-                    <img class="features__picture" width="320" height="260" src="img/main-city-desktop@1x.jpg" alt="Picture 0f Sedona">
+              <img class="features__picture" width="320" height="260" src="img/main-city-desktop@1x.jpg" alt="Picture 0f Sedona">
             </div>
+          </li>
             <ul class="features__sublist">
               <li class="features__item">
-                <h2 class="features__title--home">Жилье</h2>
+                <h2 class="features__title features__title--home">Жилье</h2>
                 <p class="features__text">Рекомендуем пожить в
                   настоящем мотеле, все как в
                   кино!</p>
               </li>
               <li class="features__item">
-                <h2 class="features__title--food">Еда</h2>
+                <h2 class="features__title features__title--food">Еда</h2>
                 <p class="features__text">Всегда заказывайте фирменный бургер,
                   вы не разочаруетесь!</p>
               </li>
               <li class="features__item">
-                <h2 class="features__title--gift">Сувениры</h2>
+                <h2 class="features__title features__title--gift">Сувениры</h2>
                 <p class="features__text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <li class="features__item">
-              <div class="features__info">
-            <h2 class="features__title--white">Там есть мост дьявола</h2>
-            <div class="features__number"></div>
-            <p class="features__text--white">Да, по нему можно пройти! Если вы
+          <li class="features__item features__item--wide">
+            <div class="features__info">
+              <h2 class="features__title">Там есть мост дьявола</h2>
+              <p class="features__text">Да, по нему можно пройти! Если вы
               осмелитесь, конечно</p>
-              </div>
+            </div>
             <div class="features__image">
-                    <img class="features__picture" width="320" height="260" src="img/main-bridge-desktop@1x.jpg" alt="bridge Devil">
+              <img class="features__picture" width="320" height="260" src="img/main-bridge-desktop@1x.jpg" alt="bridge Devil">
             </div>
           </li>
-          <div class="features__item--horizontaly">
           <li class="features__item">
             <h2 class="features__title">Небольшая площадь</h2>
-            <div class="features__number"></div>
-            <p class="features__text">Все достопримечательности
+            <p class="features__text">Все интиресные места
               находятся очень близко</p>
           </li>
           <li class="features__item">
             <h2 class="features__title">Красивая дорога</h2>
-            <div class="features__number"></div>
             <p class="features__text">Ехать в Седону из Лас-Вегаса
               совсем не скучно!</p>
           </li>
           <li class="features__item">
             <h2 class="features__title">Мало туристов</h2>
-            <div class="features__number"></div>
             <p class="features__text">Большинство едет в Гранд Каньон
               и толпится там</p>
           </li>
-          </div>
         </ol>
       </section>
       <section class="apointment">
@@ -118,20 +114,18 @@
       </div>
     </main>
     <footer class="main-footer">
+        <p class="main-footer__hashtag hashtag">#visitsedona</p>
       <div class="main-footer__social social">
-        <a class="social__link" href="#" aria-label="Седона в Twitter">
-          <img class="social__icon--twitter" src="img/icon-twitter.svg" alt="Picture">
+        <a class="social__link social__link--twitter" href="#" aria-label="Седона в Twitter">
         </a>
-        <a class="social__link" href="#" aria-label="Седона в Facebook">
-          <img class="social__icon--facebook" src="img/icon-facebook.svg" alt="Picture">
+        <a class="social__link social__link--facebook" href="#" aria-label="Седона в Facebook">
         </a>
-        <a class="social__link" href="#" aria-label="Седона в YouTube">
-          <img class="social__icon--youtube" src="img/icon-youtube.svg" alt="Picture">
+        <a class="social__link social__link--youtube" href="#" aria-label="Седона в YouTube">
         </a>
       </div>
       <p class="main-footer__copyright copyright">
         Разработано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="117" height="48">
+          <img src="img/logo-htmlacademy.svg" width="60" height="48">
         </a>
       </p>
     </footer>

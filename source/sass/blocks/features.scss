@@ -10,56 +10,70 @@
 }
 
 .features__item {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  margin: 23px 0 0;
+  margin: 0;
 }
 
 .features__title {
   @include font-set(18px, 26px, 700);
   position: relative;
   color: #000000;
-  margin: 0 0 0 54px;
-  padding-bottom: 14px;
-  padding-top: 60px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  text-align: center;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+
+  &::after {
+    display: block;
+    counter-increment: section;
+    content: "– №" counter(section) " –";
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
-.features__title--home {
-  text-align: right;
-  font-size: 21px;
-  margin-left: 60px;
-}
+.features__title {
+  &::before {
+    position: absolute;
+    top: -10px;
+    left: -46px;
+    width: 37px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.features__title--food {
-  text-align: right;
-  font-size: 21px;
-  margin-left: 60px;
-}
+  &--home {
+    font-size: 21px;
+    margin-left: 60px;
+    background-image: url("../img/icon-house.svg");
+  }
 
-.features__title--gift {
-  text-align: right;
-  font-size: 21px;
-  margin-left: 60px;
+  &--food {
+    font-size: 21px;
+    margin-left: 60px;
+    background-image: url("../img/icon-burger.svg");
+  }
+
+  &--gift {
+    font-size: 21px;
+    margin-left: 60px;
+    background-image: url("../img/icon-gift.svg");
+  }
 }
 
 .features__text {
   @include font-set(14px, 21px);
-  color: #333333;
-  margin: 0 20px 0 61px;
-  text-align: left;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
 }
 
-.features__item--horizontaly {
-  text-align: center;
-  background: $gray-gallery-ea;
-  padding-bottom: 30px;
-}
-
-.features__text--white {
+.features__info .features__text {
   color: $white;
-  margin: 12px 21px;
-  line-height: 23px;
+  margin: 2px 34px;
 }
 
 .features__list {
@@ -86,30 +100,36 @@
   margin: 0;
 }
 
-.features__info:nth-child(1) {
-  background: $light-grey-blue;
-  // padding-bottom: 30px;
-  height: 258px;
+.features__info--blue {
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .features__info:nth-child(2) {
   background: $light-grey-blue;
 }
 
-.features__number::before {
-  display: list-item;
-  counter-increment: section;
-  content: "– №" counter(section) " –";
-  font-size: 14px;
+.features__info-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 45px 20px;
 }
 
-.features__title--white {
-  margin: 3px auto 23px;
-  max-width: 160px;
-  font-size: 21px;
-  line-height: 20px;
-  padding-top: 46px;
+.features__info .features__title {
+  color: $white;
+  margin: 12px 21px;
+  line-height: 23px;
 }
+
+.features__info--triangle {
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: contain;
+  padding-top: calc((37/320)*100%);
+}
+
 
 .features__image {
   width: auto;
@@ -117,10 +137,14 @@
 
 @media (min-width: $tablet-width) {
   .features__item {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 0 -7px;
+    width: 33.3334%;
+    margin: 0;
+
+    &--wide {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .features__info {
@@ -135,14 +159,24 @@
     padding: 60px 0 51px;
   }
 
+  .features__sublist .features__title {
+    padding: 102px 0 11px 4px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000000;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
   .features__picture {
     width: 512px;
     height: 258px;
   }
 
   .features__title {
-    margin: 3px 87px 8px;
-    padding: 67px 0 4px;
+    margin: 3px 56px 8px;
+    padding: 27px 0 4px;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
@@ -151,8 +185,19 @@
   }
 
   .features__text {
-    margin: 0 auto 17px;
-    max-width: 163px;
+    margin: 0 50px 17px;
     line-height: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__info {
+    width: 400px;
+  }
+
+  .features__picture {
+    width: 100%;
+    height: 258px;
   }
 }
