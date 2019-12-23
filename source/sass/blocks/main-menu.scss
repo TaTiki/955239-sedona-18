@@ -127,27 +127,27 @@
 
     &:hover,
     &:focus {
-        color: $light-grey-blue;
-        background-color: $white;
+      color: $light-grey-blue;
+      background-color: $white;
     }
 
     &:active {
-        color: rgba($black, 0.3);
-        background-color: $white;
+      color: rgba($black, 0.3);
+      background-color: $white;
     }
-}
-
-@media (min-width: $desktop-width) {
-  .main-menu {
-    height: 54px;
   }
 
-  .main-menu__link {
-    font-size: 14px;
-  }
+  @media (min-width: $desktop-width) {
+    .main-menu {
+      height: 54px;
+    }
 
-  .main-menu__item {
-    padding: 15px 0;
+    .main-menu__link {
+      font-size: 14px;
+    }
+
+    .main-menu__item {
+      padding: 15px 0;
+    }
   }
-}
 }

@@ -32,9 +32,7 @@
     font-size: 14px;
     font-weight: 400;
   }
-}
 
-.features__title {
   &::before {
     position: absolute;
     top: -10px;
@@ -113,7 +111,7 @@
 .features__info-wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  padding: 45px 20px;
+  padding-top: 45px;
 }
 
 .features__info .features__title {
@@ -125,9 +123,8 @@
 .features__info--triangle {
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
-  background-size: auto;
   background-size: contain;
-  padding-top: calc((37/320)*100%);
+  padding-top: calc((37/320) * 100%);
 }
 
 

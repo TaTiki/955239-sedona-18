@@ -5,7 +5,7 @@
   background-color: #ffffff;
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
+
   @include container;
 
   padding-top: 36px;
@@ -133,7 +133,7 @@
 }
 
 @media (min-width: $desktop-width) {
-.main-footer__social {
-  left: 13%;
+  .main-footer__social {
+    left: 13%;
   }
 }
