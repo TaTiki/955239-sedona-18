@@ -454,14 +454,14 @@
   &::after {
     width: 280px;
   }
- }
+  }
 
   .form__container--impression {
     width: 480px;
     padding-left: 80px;
   }
 
- .form__legend--sights{
+  .form__legend--sights{
 
   &::before {
     width: 280px;
@@ -482,12 +482,12 @@
 }
 
   .edge-shadows:after {
-   content: "";
-   position: absolute;
-   right: -15px;
-   top: 0;
-   width: 15px;
-   height: 100%;
-   box-shadow: 15px 0 10px -19px inset;
- }
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    box-shadow: 15px 0 10px -19px inset;
+  }
 }
