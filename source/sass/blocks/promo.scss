@@ -14,19 +14,18 @@
   text-transform: uppercase;
 
   &::after {
-  content: url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 40px;
-  z-index: 20px;
-  margin-bottom: 0;
-  padding-top: calc((37/320)*100%);
+    content: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    z-index: 20px;
+    margin-bottom: 0;
+    padding-top: calc( (37/320)·100%);
   }
 }
 
 .promo__title {
   margin: 0;
-  padding: 0;
   position: relative;
   margin-bottom: 26px;
   padding: 0 20px;
@@ -43,9 +42,8 @@
   }
 
   .promo__title {
-    padding-top: 0;
     margin-bottom: 37px;
-    padding: 0px 121px 0 107px;
+    padding: 0 121px 0 107px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -68,8 +66,8 @@
   }
 
   .promo__title {
-  margin-bottom: 37px;
-  padding: 0px 312px 0 295px;
+    margin-bottom: 37px;
+    padding: 0 312px 0 295px;
   }
 
   .promo__description {

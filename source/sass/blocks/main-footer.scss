@@ -15,13 +15,13 @@
 
   @include container;
 
-@media (min-width: $tablet-width) {
-  display: flex;
-  position: relative;
-  height: 120px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 61px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: relative;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 61px;
   }
 }
 
@@ -144,7 +144,7 @@
   }
 
   .main-footer {
-    padding: 0px 120px;
+    padding: 0 120px;
     position: relative;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   }
