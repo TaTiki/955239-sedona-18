@@ -1,33 +1,28 @@
 .main-header {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
   background-color: #ffffff;
   position: relative;
+  margin: 0 auto;
 }
 
 .main-header__logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  top: 0;
   z-index: 2;
+  margin-left: -51px;
 }
 
 .main-header__logo-picture {
-  width: 120px;
   height: auto;
 }
 
 .main-header__top {
-  width: 100%;
-  background: $white;
-  height: 55px;
-  position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    height: 56px;
 }
 
 .main-header__intro {
-  min-height: 280px;
+  min-height: 390px;
   background-image: url("../img/bg-back-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  background-position: bottom;
 }
 
 .main-header__title {
@@ -47,31 +42,76 @@
   position: absolute;
   content: "";
   width: 100%;
-  height: 57px;
+  height: 58px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
+  background-image: url("../img/bg-intro-triangle-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+//------photo
+
+.main-header__inner {
+  height: 158px;
+  background-size: auto, auto;
+  background-position: left bottom, left bottom;
+  background-image: url("../img/bg-back-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header__inner::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 58px;
+  left: 0;
+  bottom: -1px;
   background-image: url("../img/bg-intro-triangle-desktop.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media (min-width: $tablet-width) {
+  .main-header {
+   display: flex;
+   flex-wrap: wrap;
+  }
+
+  .main-header__intro {
+    min-height: 518px;
+    padding-bottom: 18px;
+  }
+
   .main-header__top {
-    position: absolute;
     background: none;
-    height: 45px;
+    height: 60px;
+    justify-content: center;
   }
 
   .main-header__logo-picture {
-    width: 100px;
-    height: auto;
+    width: 102px;
+    height: 83px;
   }
+  .main-header__title {
+    width: 460px;
+  }
+
+  .main-header__inner {
+    height: 290px;
+    background-position: left bottom, left bottom;
+    background-size: cover;
+    width: 100%;
+ }
 }
+
 
 @media (min-width: $desktop-width) {
   .main-header__intro {
     background-color: #96aac7;
-    padding: 74px 73px 72px;
+    padding: 62px 73px 72px;
     min-height: 519px;
     background-size: cover;
     height: 54px;
@@ -82,13 +122,25 @@
     height: 360px;
   }
 
+  .main-header__logo {
+    position: absolute;
+    left: 49%;
+    margin-left: -63px;
+  }
+
   .main-header__logo-picture {
-    width: 138px;
-    height: 70px;
-    background-image: url("../img/logo-sedona-desktop.svg");
+    height: 77px;
+    width: 146px;
   }
 
   .main-header__top {
     height: 54px;
+  }
+
+  .main-header__inner {
+    height: 300px;
+    background-position: left bottom, left bottom;
+    background-size: cover;
+    padding-bottom: 14px;
   }
 }

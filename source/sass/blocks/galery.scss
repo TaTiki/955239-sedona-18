@@ -1,15 +1,143 @@
-.galery {
-  width: 648px;
-  display: flex;
-  flex-wrap: wrap;
+.gallery {
+  font-family: $basic-font-family;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__item {
+  width: 320px;
   margin: 0 auto;
+  padding-top: 22px;
+  border-top: 1px solid #d6d6d6;
+}
+.gallery__item:last-child {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.gallery-image {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery-image__image {
+  display: block;
+}
+
+.gallery-image__footer {
+  padding: 12px 20px;
+}
+
+.gallery-image__image:nth-of-type(1) {
+  background-image: url("../img/photo-sunset-mobile@1x.jpg");
+  height: 280px;
+}
+
+.gallery-image__title {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.gallery-image__author {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: none;
+  text-align: left;
+}
+
+.likes {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes__like-button {
+  padding: 0;
+  background: none;
+  border: transparent;
+  cursor: pointer;
+  fill: #b2b2b2;
+}
+
+.likes__count {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 @media (min-width: $tablet-width) {
-  .gallery-content {
-    width: 648px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 648px;
+}
+
+.gallery__item {
+  margin: 0;
+  border: none;
+  padding-top: 0;
+  width: 324px;
+}
+
+.gallery__item--landscape {
+  width: 100%;
+ }
+ .gallery-image {
+   padding: 0;
+   width: 100%;
+ }
+
+ .gallery-image__footer {
+   background-color: #f2f2f2;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .gallery-image__footer--grayish {
+  background-color: #eaeaea;
+ }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery__item {
+    position: relative;
+    width: 400px;
+  }
+
+  .gallery__item--landscape {
+    width: 100%;
+  }
+
+  .gallery-image__image:nth-of-type(1) {
+  height: auto;
+  }
+
+  .gallery-image__footer {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    padding:4px 20px;
+  }
+
+  .gallery-image__author {
+    color: #ffffff;
+  }
+
+  .likes__like-button {
+    fill: #ffffff;
   }
 }
