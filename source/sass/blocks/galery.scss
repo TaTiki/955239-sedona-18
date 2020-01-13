@@ -78,28 +78,29 @@
   width: 648px;
 }
 
- .gallery__item {
-  margin: 0;
-  border: none;
-  padding-top: 0;
-  width: 324px;
- }
+  .gallery__item {
+    margin: 0;
+    border: none;
+    padding-top: 0;
+    width: 324px;
+  }
 
 .gallery__item--landscape {
   width: 100%;
   }
- .gallery-image {
+
+  .gallery-image {
     padding: 0;
     width: 100%;
   }
 
- .gallery-image__footer {
+  .gallery-image__footer {
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
   }
 
- .gallery-image__footer--grayish {
+  .gallery-image__footer--grayish {
     background-color: #eaeaea;
  }
 }
