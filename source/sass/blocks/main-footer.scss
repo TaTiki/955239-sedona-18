@@ -10,7 +10,7 @@
   margin-right: auto;
   margin-left: auto;
   width: 320px;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 23px;
 
   @include container;
@@ -72,8 +72,15 @@
 
 .main-footer__hashtag {
   text-align: center;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
+  margin-right: 7px;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+  }
 }
+
 
 .hashtag {
   display: block;
@@ -89,16 +96,17 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     left: 21%;
     top: 18%;
+    margin-bottom: 0;
   }
 }
 
 .social__link {
-  margin: 14px 6px 0 0;
+  margin: 14px 8px 25px -2px;
   display: flex;
   width: 46px;
   height: 48px;
@@ -106,7 +114,12 @@
   background-color: $light-grey-blue;
   background-position: center;
   fill: $white;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 12px 3px -5px;;
+  }
 }
+
 
 .social__link--twitter {
   background-image: url("../img/icon-twitter.svg");
@@ -127,15 +140,19 @@
 }
 
 .copyright-link {
-  margin: 14px 0 0 12px;
+  margin: 3px 9px 0px 11px;
 
-  &:hover {
-    fill: #669ec0;
+  @media (min-width: $tablet-width) {
+    margin: 14px 0 0 8px;
   }
+}
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+.copyright-link:hover, .copyright-link:focus {
+  fill: #81b3d2;
+}
+
+.copyright-link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $desktop-width) {

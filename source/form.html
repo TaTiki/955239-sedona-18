@@ -49,9 +49,9 @@
       <div class="form__container form__container--fullname">
         <fieldset class="form__fieldset">
           <legend class="form__legend form__legend--fullname">Представьтесь:</legend>
-          <p class="form__group form__group--fullname"> <label class="form__label" for="first-name">Имя*:</label> <input class="form__input" type="text" name="first-name" placeholder="Имя" value="Петр" required=""> </p>
-          <p class="form__group form__group--fullname"> <label class="form__label" for="last-name">Фамилия*:</label> <input class="form__input" type="text" name="last-name" placeholder="Фамилия" value="Иванов" required=""> </p>
-          <p class="form__group form__group--fullname"> <label class="form__label" for="middle-name">Отчество:</label> <input class="form__input" type="text" name="middle-name" placeholder="Отчество" value="Александрович"> </p>
+          <p class="form__group form__group--fullname"> <label class="form__label" for="first-name">Имя*:</label> <input class="form__input" id="forename" type="text" name="first-name" placeholder="Имя" value="Петр" required=""> </p>
+          <p class="form__group form__group--fullname"> <label class="form__label" for="last-name">Фамилия*:</label> <input class="form__input" type="text" id="surname" name="last-name" placeholder="Фамилия" value="Иванов" required=""> </p>
+          <p class="form__group form__group--fullname"> <label class="form__label" for="middle-name">Отчество:</label> <input class="form__input" type="text" id="patronymic" name="middle-name" placeholder="Отчество" value="Александрович"> </p>
         </fieldset>
       </div>
       <div class="form__container form__container--communication">
@@ -63,7 +63,7 @@
                 <span class="form__label-hidden">Контактный&nbsp;</span>телефон*:
               </label>
               <div class="form__input-icon-group">
-                <input class="form__input form__input--contact-info" type="tel" id="telephone" name="telephone" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
+                <input class="form__input form__input--contact-info" type="tel" id="telephone" name="contact-telephone" placeholder="Введите телефон" pattern="[+7|8]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
                 <span class="form__icon form__icon--telephone"></span>
               </div>
             </div>
@@ -101,22 +101,21 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend form__legend--sights"><span class="form__legend-fixed-content">Посещенные достопримечательности:</span></legend>
           <div class="form__selectors-wrapper">
+              <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" id="bridge" name="checkbox" checked="">
+              <label for="bridge" class="form__selector-label form__selector-label--sights"> Мост Дьявола</label>
+
             <label class="form__selector-label form__selector-label--sights">
-              <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked="">
+              <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" id="mount" name="checkbox" checked="">
               <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
-              <span class="form__selector-text">Мост Дьявола</span>
+              Гора-Колокол
             </label><label class="form__selector-label form__selector-label--sights">
-              <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked="">
+              <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" id="park" name="checkbox" checked="">
               <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
-              <span class="form__selector-text">Гора-Колокол</span>
+              Слайд-парк
             </label><label class="form__selector-label form__selector-label--sights">
-              <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked="">
+              <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" id="rocks" name="checkbox">
               <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
-              <span class="form__selector-text">Слайд-парк</span>
-            </label><label class="form__selector-label form__selector-label--sights">
-              <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive">
-              <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
-              <span class="form__selector-text">Красные скалы</span>
+              Красные скалы
             </label>
           </div>
         </fieldset>

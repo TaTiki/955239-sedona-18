@@ -1,5 +1,5 @@
 .apointment {
-  padding: 30px 20px 50px 20px;
+  padding: 12px 20px 49px 13px;
   text-transform: uppercase;
   font-size: 14px;
   text-align: center;
@@ -8,7 +8,7 @@
 
 .apointment__title {
   margin-top: 0;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -19,7 +19,7 @@
   @include font-set(14px, 24px, 400);
   color: $black-shaft;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .apointment__button {
@@ -27,7 +27,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .apointment {
-    padding-top: 53px;
+    padding-top: 56px;
     padding-bottom: 58px;
     margin: 0 auto;
     background-color: $white;
@@ -55,17 +55,21 @@
     text-transform: uppercase;
     width: 455px;
     position: relative;
-    left: 49.7%;
+    left: 50.6%;
     transform: translateX(-50%);
   }
 
   .apointment__title {
     font-size: 30px;
+    padding-right: 0px;
+    padding-left: 10px;
+    margin-bottom: 15px;
   }
 
   .apointment__text {
-    padding: 15px;
-    margin-bottom: 27px;
+    padding: 15px 20px 44px 29px;
+    margin: 0 auto;
+    max-width: 70%;
   }
 }
 
@@ -76,11 +80,16 @@
     padding-bottom: 66px;
   }
 
+  .apointment__title {
+    margin-bottom: 17px;
+  }
+
   .apointment__text {
-    margin-bottom: 33px;
+    padding: 15px 20px 49px 29px;
+    max-width: 43%;
   }
 
   .apointment__button {
-    left: 50%;
+    left: 50.3%;
   }
 }

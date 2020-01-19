@@ -125,10 +125,31 @@
   flex-direction: column;
 }
 
+
+.form__selector-label .form__selector-label--sights::before {
+  position: relative;
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.form__selector-label .form__selector-label--sights::after {
+  background: url("../img/icon-tick.svg");
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 16px;
+  top: 20%;
+  left: 20%;
+  z-index: 2;
+}
+
 .form__selector-label {
   position: relative;
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 18px;
@@ -136,7 +157,8 @@
   text-transform: none;
 }
 
-.form__selector-indicator--radio {
+
+.--radio {
   border-radius: 50%;
 }
 

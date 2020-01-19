@@ -14,14 +14,14 @@
       <nav class="main-menu main-menu__closed">
           <button class="main-menu main-menu--close-button" aria-label="Закрыть меню" type=button></button>
         <ul class="main-menu__list">
-          <li class="main-menu__item">
+          <li class="main-menu__item main-menu__item--active">
             <a class="main-menu__link" href="#">Главная</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link"href= "form.html">Форма отзыва</a>
+            <a class="main-menu__link"href="form.html">Форма отзыва</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">HTML Academy</a>
@@ -30,7 +30,11 @@
       </nav>
       <div class="main-header__top">
         <a class="main-header__logo">
-          <img class="main-header__logo-picture" width="102" height="83" src="img/logo-sedona-desktop.svg" alt="Sedona slogan">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-header__logo-picture" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Sedona slogan">
+        </picture>
         </a>
         <button class="burger-button" aria-label="Открыть меню" type= "button"></button>
       </div>
@@ -39,19 +43,23 @@
       </div>
     </header>
     <main>
-      <div class="promo">
+      <div class="promo promo--triangle">
         <h1 class="promo__title">Седона — небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий большего!</h1>
         <p class="promo__description">Рассмотрим 5 причин, по которым Седона&nbsp;круче чем гранд каньон!</p>
       </div>
       <section class="features">
         <ol class="features__list">
           <li class="features__item features__item--wide">
-            <div class="features__info features__info--blue">
+            <div class="features__info features__info--bluing">
                 <h2 class="features__title">Настоящий городок</h2>
                 <p class="features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="features__image">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg 2x, img/photo-city-tablet@1x.jpg 1x">
+                <source media="(min-width:320px)" srcset="img/main-city-mobile@1x.jpg 2x, img/photo-city-mobile@1x.jpg 1x">
               <img class="features__picture" width="320" height="260" src="img/main-city-desktop@1x.jpg" alt="Picture 0f Sedona">
+            </picture>
             </div>
           </li>
             <ul class="features__sublist">
@@ -75,33 +83,40 @@
           <li class="features__item features__item--wide">
             <div class="features__info features__info--blue">
               <h2 class="features__title">Там есть мост&nbsp;дьявола</h2>
-              <p class="features__text">Да, по нему можно пройти! Если вы
-              осмелитесь, конечно</p>
+              <p class="features__text">Да, по нему можно пройти!
+                 Если вы осмелитесь,конечно</p>
             </div>
             <div class="features__image">
+              <picture>
+                <source media="(min-width:768px)" srcset="img/main-bridge-tablet@1x.jpg 2x, img/photo-bridge-tablet@1x.jpg 1x">
+                <source media="(min-width:320px)" srcset="img/main-bridge-mobile@1x.jpg 2x, img/photo-bridge-mobile@1x.jpg 1x">
               <img class="features__picture" width="320" height="260" src="img/main-bridge-desktop@1x.jpg" alt="bridge Devil">
+            </picture>
             </div>
           </li>
-          <li class="features__item features__item-facts">
+          <ul class="features__item--facts">
+          <li class="features__item">
             <h2 class="features__title">Небольшая площадь</h2>
             <p class="features__text">Все интиресные места
               находятся очень близко</p>
           </li>
-          <li class="features__item features__item-facts">
+          <li class="features__item">
             <h2 class="features__title">Красивая дорога</h2>
             <p class="features__text">Ехать в Седону из Лас-&nbsp;Вегаса
               совсем не&nbsp;скучно!</p>
           </li>
-          <li class="features__item features__item-facts">
+          <li class="features__item">
             <h2 class="features__title">Мало туристов</h2>
             <p class="features__text">Большинство едет в Гранд Каньон
               и толпится там</p>
           </li>
+          </ul>
         </ol>
       </section>
       <section class="apointment">
         <h2 class="apointment__title">Заинтересовались?</h2>
-        <p class= "apointment__text"> Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class= "apointment__text"> Укажите предполагаемые даты поездки,
+          и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
         <button class="apointment__button button">Найти гостиницу</button>
       </section>
       <div class="map">
