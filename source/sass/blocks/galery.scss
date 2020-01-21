@@ -15,8 +15,9 @@
 }
 
 .gallery-image {
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 20px;
+  padding-top: 1px;
 }
 
 .gallery-image__image {
@@ -24,12 +25,7 @@
 }
 
 .gallery-image__footer {
-  padding: 14px 20px 15px;
-}
-
-.gallery-image__image:nth-of-type(1) {
-  background-image: url("../img/photo-sunset-mobile@1x.jpg");
-  height: 280px;
+  padding: 15px 0;
 }
 
 .gallery-image__title {
@@ -98,6 +94,15 @@
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
+    padding: 14px 17px 11px 18px;
+  }
+
+  .likes {
+    padding-bottom: 6px;
+  }
+
+  .likes__count {
+    padding-right: 16px;
   }
 
   .gallery-image__footer--grayish {
@@ -131,7 +136,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    padding: 4px 20px;
+    padding: 16px 18px 10px 20px;
   }
 
   .gallery-image__author {

@@ -69,7 +69,7 @@
   color: rgba(118, 99, 87, 0.3);
 }
 
-.main-menu__link:not([href]):hover, .main-menu__link:not([href]):focus {
+.main-menu__link:not([href]):hover, .menu__link:not([href]):focus {
   background: none;
 }
 
@@ -132,7 +132,7 @@
     border-bottom: none;
     border-top: none;
     text-align: center;
-    padding: 22px 28px 21px 28px;
+    padding: 25px 28px 21px 28px;
     box-shadow: none;
     border-radius: 0;
     background-color: transparent;

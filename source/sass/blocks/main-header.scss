@@ -18,7 +18,7 @@
 .main-header__top {
   justify-content: flex-end;
   align-items: center;
-  height: 56px;
+  height: 54px;
 }
 
 .main-header__intro {
@@ -34,8 +34,9 @@
 }
 
 .main-header__title {
-  width: 280px;
+  width: 231px;
   height: auto;
+  padding-right: 8px;
 }
 
 .main-header__intro::after {
@@ -55,7 +56,7 @@
   height: 158px;
   padding-bottom: 17px;
   background-size: auto, auto;
-  background-position: left bottom, left bottom;
+  background-position: 45% 90%;
   background-image: url("../img/bg-back-desktop@1x.jpg");
   background-repeat: no-repeat;
   display: flex;
