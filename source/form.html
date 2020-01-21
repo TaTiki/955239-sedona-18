@@ -34,6 +34,9 @@
       <button class="burger-button" aria-label="Открыть меню" type= "button"></button>
     </div>
     <div class="main-header__inner">
+        <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x 1x.jpg,img/bg-back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, bg-back-tablet@2x.jpg 2x">
+          <img class="main-header__inner-fond" src="img/bg-back-mobile@1x.jpg 1x" srcset="img/bg-back-mobile@2x.jpg 2x">
       <img class="main-header__title" src="img/text-sedona.svg" width="280" height="213" alt="City of Sedona">
     </div>
   </header>
@@ -63,7 +66,7 @@
       </fieldset>
       <fieldset class="form__container form__container--communication">
           <legend class="form__legend form__legend--communication">Контактная информация:</legend>
-            <div class="form__group-wrapper">
+            <div class="form__group-wrapper--context">
             <div class="form__group form__group--column form__group--phone">
               <label class="form__label form__label--padding" for="telephone">
                 <span class="form__label-hidden">Контактный&nbsp;</span>телефон*:
@@ -83,12 +86,12 @@
             </div>
       </fieldset>
       <fieldset class="form__container form__container--impression">
-          <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
-          <input class="form__input-radio visually-hidden" type="radio" id="black" name="radio" checked="">
+          <legend class="form__legend">Ваше общее впечатление:</legend>
+          <input class="form__input-radio visually-hidden" type="radio" id="positive" name="radio" checked="">
           <label for="positive" class="form__label form__label-radio">Скорее положительные</label>
-            <input class="form__input-radio visually-hidden" type="radio" name="radio">
+            <input class="form__input-radio visually-hidden" type="radio" id="negative" name="radio">
             <label for="negative" class="form__label form__label-radio">Скорее отрицательные</label>
-            <input class="form__input-radio visually-hidden" type="radio" name="radio">
+            <input class="form__input-radio visually-hidden" type="radio" id="neutral" name="radio">
             <label for="neutral" class="form__label form__label-radio">Затрудняюсь ответить</label>
       </fieldset>
       <fieldset class="form__container form__container--sights">
@@ -104,7 +107,7 @@
               <label for="rocks" class="form__label form__label-checkbox">Красные скалы</label>
           </div>
       </fieldset>
-      <fieldset class="form__container">
+      <fieldset class="form__container form__container--emotions">
           <legend class="form__legend form__legend--review">Опишите свои эмоции:</legend>
           <textarea class="form__input form__input--textarea" name="name" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>

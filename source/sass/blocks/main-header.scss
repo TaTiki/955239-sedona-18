@@ -50,6 +50,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.main-header__intro-fond {
+  display: none;
+}
 //------photo
 
 .main-header__inner {
@@ -64,6 +68,7 @@
   align-items: center;
 }
 
+
 .main-header__inner::after {
   position: absolute;
   content: "";
@@ -74,6 +79,10 @@
   background-image: url("../img/bg-intro-triangle-desktop.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.main-header__inner-fond {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

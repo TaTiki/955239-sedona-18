@@ -2,7 +2,7 @@
 
 .feedback__info {
   padding-left: 12px;
-  padding-right: 20px;
+  padding-right: 12px;
   padding-top: 39px;
   padding-bottom: 18px;
   text-align: center;
@@ -33,7 +33,7 @@
 }
 
 .form__container {
-  padding: 16px;
+  padding: 19px;
   margin: 0;
   border: 0;
 }
@@ -49,7 +49,7 @@
 
 .form__legend {
   margin: 0 auto;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -61,11 +61,11 @@
   padding: 0;
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .form__label {
-  margin-right: 15px;
+  margin-right: 14px;
   line-height: 26px;
   color: #333333;
   text-transform: uppercase;
@@ -81,6 +81,20 @@
   background-color: #f2f2f2;
   border: none;
 }
+
+.form__container--communication .form__group-wrapper {
+  margin-top: -16px;
+  padding-bottom: 16px;
+}
+
+
+.form__container--impression .form__label-radio {
+  padding-bottom: 12px;
+  margin-top: -18px;
+}
+
+
+
 
 .form__label--padding {
   margin-bottom: 10px;
@@ -106,6 +120,8 @@
 .form__group--column {
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 9px;
+
 }
 
 .form__icon--email {
@@ -156,12 +172,12 @@
 
 .form__label.form__label-checkbox {
   position: relative;
-  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  text-transform: none;
-  margin-bottom: 20px;
 }
 
 
@@ -217,6 +233,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 55px;
+    border-top: 0;
   }
 
   .feedback__info {
@@ -227,6 +244,7 @@
 
   .feedback__title {
     font-size: 30px;
+    margin-bottom: 34px;
   }
 
   .feedback__description {
@@ -235,12 +253,10 @@
 
   .form__container {
     padding: 0;
-    border-top: 0;
   }
 
   .form__container--fullname {
     position: relative;
-    order: 2;
     width: 324px;
     padding-left: 54px;
   }
@@ -267,7 +283,6 @@
 
   .form__container--communication {
     padding-top: 50px;
-    order: 3;
     width: 100%;
   }
 
@@ -304,17 +319,12 @@
   }
 
   .form__container--impression {
-    order: 1;
+    order: -1;
     width: 324px;
-  }
-
-  .form__legend--impression {
-    margin-top: 10px;
   }
 
   .form__container--sights {
     padding-top: 36px;
-    order: 4;
     width: 100%;
   }
 
@@ -364,9 +374,12 @@
     width: 230px;
   }
 
+  .form__container--emotions {
+    width: 100%;
+  }
+
   .form__container--review {
     padding-top: 50px;
-    order: 5;
     width: 100%;
   }
 
@@ -439,8 +452,23 @@
     width: 480px;
   }
 
+  .form__label {
+    flex-shrink: 0;
+  }
+
   .form__group {
     align-items: center;
+  }
+
+  .form__group--column {
+    flex-direction: row;
+    width: 48%;
+  }
+
+  .form__group-wrapper--context {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__legend--communication {
