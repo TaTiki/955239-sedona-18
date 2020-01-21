@@ -46,15 +46,14 @@
     padding-top: 48px;
     padding-bottom: 58px;
 
-
-    &:after {
+    &::after {
       display: none;
     }
   }
 
   .promo__title {
     margin-bottom: 37px;
-    padding: 0px 87px 0 79px;
+    padding: 0 87px 0 79px;
     font-size: 20px;
     line-height: 25px;
   }
