@@ -2,8 +2,6 @@
   position: relative;
   font-family: $basic-font-family;
   text-transform: uppercase;
-  padding-top: 35px;
-  padding-bottom: 60px;
 }
 
 .video-content__header {
@@ -13,7 +11,7 @@
 .video-content__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -26,65 +24,80 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .video-content__controls {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 19px;
+  padding-right: 21px;
   margin-top: -45px;
+  background-color: #ffffff;
+}
+
+.video-content__bar-wrapper {
+  position: relative;
+  z-index: 2;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 12px 8px 22px;
 }
 
 .video-content__bar {
   position: relative;
-  height: 45px;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 235px;
+  height: 3px;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 235px;
-    height: 3px;
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 22%;
-    transform: translate(-50%, -50%);
-    width: 9px;
-    height: 9px;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
+.video-content__drag {
+  position: absolute;
+  top: -80%;
+  left: 15%;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
 }
 
 .video-content__control-buttons {
   display: flex;
   align-items: center;
-  position: relative;
+  height: 66px;
   background-color: #f2f2f2;
-  height: 70px;
 }
 
 .video-content__button--repeat {
   min-width: 16px;
-  margin-left: 25px;
+  margin-left: 18px;
+  margin-top: 6px;
+  bottom: 0;
+  background-color: transparent;
+  border: 0;
+  fill: $black-nevada;
 }
 
 .video-content__button--subtitle {
   min-width: 32px;
   margin-left: auto;
-  margin-right: 31px;
+  margin-right: 19px;
+  margin-top: 6px;
+  bottom: 0;
+  background-color: transparent;
+  border: 0;
+  fill: $black-nevada;
 }
 
 .video-content__button--fullscreen {
   min-width: 20px;
-  margin-right: 23px;
+  margin-right: 14px;
+  margin-top: 6px;
+  bottom: 0;
+  background-color: transparent;
+  border: 0;
+  fill: $black-nevada;
 }
 
 .video-content__image {
@@ -93,7 +106,6 @@
 
 @media (min-width: $tablet-width) {
   .video-content {
-    padding-top: 68px;
     padding-bottom: 38px;
     margin: 0 auto;
 
@@ -104,15 +116,17 @@
 
   .video-content__title {
     font-size: 30px;
+    margin-bottom: 30px;
+    margin-right: 5px;
   }
 
   .video-content__text {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 100px;
+    padding-right: 106px;
   }
 
   .video-content__header {
-    padding: 65px 60px;
+    padding: 65px 60px 73px;
   }
 
   .video-content__player {
@@ -126,19 +140,26 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: inherit;
+  }
+
+  .video-content__drag {
+    left: 113px;
+  }
+
+  .video-content__button--repeat {
+    margin-left: 27px;
   }
 
   .video-content__bar {
+    width: 100%;
+  }
+
+
+  .video-content__bar-wrapper {
     height: 93px;
-
-    &::before {
-      width: 390px;
-      left: 44%;
-    }
-
-    &::after {
-      left: 29%;
-    }
+    z-index: 0;
+    padding: 8px 167px 8px 91px;
   }
 
   .video-content__control-buttons {
@@ -155,15 +176,19 @@
 
   .video-content__button--subtitle {
     margin-left: auto;
-    margin-right: 31px;
+    margin-right: 19px;
   }
 
   .video-content__button--fullscreen {
-    margin-right: 41px;
+    margin-right: 33px;
   }
 }
 
 @media (min-width: 1200px) {
+  .video-content {
+    padding-bottom: 84px;
+  }
+
   .video-content__header {
     padding: 70px 200px;
   }
@@ -175,5 +200,9 @@
   .video-content__player {
     width: 800px;
     margin: 0 auto;
+  }
+
+  .video-content__bar-wrapper {
+    padding: 8px 167px 8px 90px;
   }
 }

@@ -9,15 +9,23 @@
   box-shadow: inset 0 -10px 10px -9px rgba(0, 1, 1, 0.2);
 }
 
+.main-menu__item--active:hover {
+  color: $greyish-brown;
+}
+
+.main-menu__item--active:active {
+  color: $kabul;
+}
+
 .main-menu__item {
   font-family: $basic-font-family;
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 20px 11px 17px 0;
   border: 0;
   width: 100%;
   display: block;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 15px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -39,20 +47,42 @@
   color: $white;
   line-height: 18px;
   font-size: 18px;
+}
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+.main-menu__link:hover {
+  color: #81b3d2;
+}
+
+.main-menu__link:active {
+  color: #766357;
+}
+
+.main-menu__link:not([href]) {
+  color: #766357;
+}
+
+.main-menu__link:not([href]):hover,
+.main-menu__link:not([href]):focus {
+  color: #604e43;
+}
+
+.main-menu__link:not([href]):active {
+  color: rgba(118, 99, 87, 0.3);
+}
+
+.main-menu__link:not([href]):hover,
+.menu__link:not([href]):focus {
+  background: none;
 }
 
 .main-menu--close-button {
   position: absolute;
   content: "";
   background-color: $light-grey-blue;
-  top: 23px;
-  right: 19px;
-  width: 22px;
-  height: 22px;
+  top: 15px;
+  right: 21px;
+  width: 23px;
+  height: 23px;
   cursor: pointer;
   border: none;
 
@@ -60,8 +90,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 9px;
-    right: 0;
+    top: 15px;
+    right: 5px;
     width: 22px;
     height: 3px;
     background-color: #ffffff;
@@ -104,7 +134,7 @@
     border-bottom: none;
     border-top: none;
     text-align: center;
-    padding: 21px 24px 20px 24px;
+    padding: 25px 28px 21px 28px;
     box-shadow: none;
     border-radius: 0;
     background-color: transparent;
@@ -141,7 +171,7 @@
     }
 
     .main-menu__item {
-      padding: 15px 0;
+      padding: 18px 0;
       font-size: 16px;
     }
   }

@@ -1,9 +1,25 @@
 .promo {
-  padding-left: 9px;
+  padding-left: 2px;
   padding-right: 9px;
-  padding-top: 41px;
+  padding-top: 39px;
+  padding-bottom: 6px;
   text-align: center;
   background-color: $white;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    z-index: 20px;
+    padding: 0;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    position: absolute;
+  }
 }
 
 .promo__description {
@@ -12,23 +28,13 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-
-  &::after {
-    content: url("../img/bg-triangle.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 40px;
-    z-index: 20px;
-    margin-bottom: 0;
-    padding: 0;
-  }
 }
 
 .promo__title {
   margin: 0;
   position: relative;
   margin-bottom: 26px;
-  padding: 0 20px;
+  padding: 0 20px 0 16px;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
@@ -37,25 +43,25 @@
 @media (min-width: $tablet-width) {
   .promo {
     background: $white;
-    padding-top: 51px;
-    padding-bottom: 57px;
+    padding-top: 48px;
+    padding-bottom: 58px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .promo__title {
     margin-bottom: 37px;
-    padding: 0 121px 0 107px;
+    padding: 0 87px 0 79px;
     font-size: 20px;
     line-height: 25px;
   }
 
   .promo__description {
     font-size: 14px;
-    padding: 1px 133px 1px 128px;
+    padding: 1px 126px 1px 128px;
     line-height: 9px;
-
-    &::after {
-      display: none;
-    }
   }
 }
 
@@ -66,12 +72,13 @@
   }
 
   .promo__title {
+    line-height: 27px;
     margin-bottom: 37px;
-    padding: 0 312px 0 295px;
+    padding: 0 303px 0 295px;
   }
 
   .promo__description {
-    margin: 0 200px;
+    margin: 0 200px 0 191px;
     padding-left: 126px;
   }
 }
