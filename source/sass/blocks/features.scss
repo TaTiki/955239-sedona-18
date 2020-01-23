@@ -9,79 +9,11 @@
   }
 }
 
-.features__item {
-  margin: 0;
-  background-repeat: no-repeat;
-  background-position: 30px 0;
-
-  &--home {
-    font-size: 21px;
-    background-image: url("../img/icons/icon-house.svg");
-    background-size: 36px;
-    background-position: 19px 0;
-  }
-
-  &--food {
-    font-size: 21px;
-    background-image: url("../img/icons/icon-burger.svg");
-    background-size: 36px;
-    background-position: 19px 6px;
-  }
-
-  &--gift {
-    font-size: 21px;
-    background-image: url("../img/icons/icon-gift.svg");
-    background-size: 34px;
-    background-position: 17px -2px;
-  }
-}
-
-.features__title {
-  @include font-set(18px, 26px, 700);
-  position: relative;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 14px;
-  margin-top: 0;
-  text-align: center;
-  text-transform: uppercase;
-
-  &::after {
-    display: block;
-    counter-increment: section;
-    content: "– №" counter(section) " –";
-    font-size: 14px;
-    font-weight: 400;
-    padding: 9px 67px 0 67px;
-  }
-}
-
-.features__title-list {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  margin-bottom: 13px;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: left;
-}
-
 .features__text {
   @include font-set(14px, 21px);
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-}
-
-.features__info .features__text {
-  color: $white;
-  margin: 0 19px 0 20px;
-  padding-bottom: 41px;
-}
-
-.features__item .features__text {
-  padding: 0 0 41px;
 }
 
 .features__list {
@@ -95,228 +27,24 @@
 .features__picture {
   display: block;
   width: 100%;
-}
-
-.features__sublist {
-  width: 100%;
-  padding: 29px 0;
-  margin: 0;
-  list-style: none;
-  content: none;
-}
-
-.features__sublist .features__item {
-  padding-left: 65px;
-  padding-top: 3px;
-  padding-bottom: 0;
-  padding-right: 20px;
-  text-align: left;
-}
-
-.features__sublist .features__item:nth-child(3) {
-  order: 4;
-}
-
-.features__sublist .features__text {
-  padding: 20px;
-  padding-left: 0;
-  padding-top: 0;
-}
-
-
-.features__info {
-  font-size: 14px;
-  line-height: 1.5;
-  color: $white;
-  margin: 0;
-  padding: 4px 12px 0 0;
-}
-
-.features__info--blue {
-  text-align: center;
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.features__info:nth-child(2) {
-  background: $light-grey-blue;
-}
-
-.features__info .features__title {
-  color: $white;
-  line-height: 23px;
-  padding-top: 38px;
-}
-
-.features__info--bluing {
-  padding-top: 40px;
-  padding-bottom: 1px;
-  padding-right: 10px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #81b3d2;
+  height: auto;
 }
 
 .features__image {
   width: auto;
-}
-
-.features__item--facts {
-  padding: 7px 40px 0 33px;
-  background-color: #eeeeee;
-  border-bottom: 1px solid #d6d6d6;
-  list-style-type: none;
-}
-
-.features__item--facts .features__item {
-  padding-bottom: 0;
-  padding-top: 18px;
+  overflow: hidden;
+  height: 258px;
 }
 
 @media (min-width: $tablet-width) {
-  .features__item {
-    width: 33.3334%;
-    margin: 0;
-
-    &--home {
-      background-position: center top;
-      background-size: 74px;
-    }
-
-    &--food {
-      background-position: center top;
-      background-size: 78px;
-    }
-
-    &--gift {
-      background-position: center top;
-      background-size: 60px;
-    }
-
-    &--wide {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      background-color: #81b3d2;
-
-
-      &:nth-of-type(2) {
-        flex-direction: row-reverse;
-      }
-    }
-  }
-
-  .features__item--facts {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 13px;
-    padding-bottom: 18px;
-    padding-right: 5px;
-    padding-left: 2px;
-  }
-
-  .features__item--facts .features__item {
-    padding: 27px;
-  }
-
-  .features__sublist .features__item {
-    padding-left: 45px;
-    padding-top: 98px;
-    padding-right: 45px;
-    padding-bottom: 1px;
-  }
-
-  .features__info {
-    width: 33.3334%;
-    text-align: center;
-  }
-
   .features__image {
     line-height: 0;
     width: 66.6667%;
   }
 
-  .features__info--bluing {
-    padding: 45px 46px 35px;
-  }
-
-  .features__sublist {
-    display: flex;
-    padding-top: 59px;
-    padding-bottom: 63px;
-  }
-
-  .features__sublist .features__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    color: #000000;
-    background-position: top center;
-    background-repeat: no-repeat;
-    padding-top: 55px;
-  }
-
-  .features__sublist .features__text {
-    padding: 0;
-  }
-
-  .features__info--blue {
-    padding: 44px 50px 31px;
-  }
-
-  .features__item-wrapper {
-    padding: 26px 46px;
-  }
-
-  .features__info .features__text {
-    margin: 0;
-    padding: 0;
-    padding-top: 1px;
-  }
-
-  .features__info .features__title {
-    padding-top: 0;
-    line-height: 26px;
-  }
-
-  .features__item--facts .features__title {
-    padding: 3px 33px 0 37px;
-    line-height: 26px;
-  }
-
-  .features__item .features__text {
-    padding: 0;
-  }
-
-  .features__item--facts .features__text {
-    padding-right: 11px;
-    padding-left: 16px;
-  }
-
   .features__picture {
     width: 512px;
-    height: 258px;
-  }
-
-  .features__title {
-    font-size: 21px;
-    font-weight: 700;
-    background-position: top center;
-    background-repeat: no-repeat;
-    text-align: center;
-
-    &::after {
-      padding-top: 8px;
-      padding-bottom: 4px;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  .features__title-list {
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 22px;
+    height: auto;
   }
 
   .features__text {
@@ -331,65 +59,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features__info {
-    width: 400px;
-  }
-
-  .features__info--blue {
-    padding: 47px 46px 35px;
-  }
-
   .features__picture {
     width: 100%;
-    height: 258px;
+    height: auto;
   }
 
   .features__text:nth-of-type(4) {
     padding: 0 15px;
-  }
-
-  .features__title {
-    margin: 4px 57px 7px;
-
-    &::after {
-      padding-top: 8px;
-      padding-bottom: 11px;
-    }
-  }
-
-  .features__title-list {
-    margin-bottom: 21px;
-    margin-top: -2px;
-  }
-
-  .features__item-wrapper {
-    padding-bottom: 40px;
-  }
-
-  .features__item-facts {
-    padding-top: 7px;
-    padding-bottom: 38px;
-  }
-
-  .features__info .features__text {
-    margin: 0 20px;
-  }
-
-  .features__info--blue .features__text {
-    margin: 0 39px;
-  }
-
-  .features__sublist {
-    padding-bottom: 82px;
-  }
-
-  .features__item--facts {
-    padding-top: 9px;
-    padding-bottom: 39px;
-  }
-
-  .features__sublist .features__item {
-    padding-left: 46px;
-    padding-right: 47px;
   }
 }

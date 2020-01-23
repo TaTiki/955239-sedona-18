@@ -49,30 +49,19 @@
   font-size: 18px;
 }
 
-.main-menu__link:hover {
-  color: #81b3d2;
+.main-menu__link:hover,
+.main-menu__link:focus {
+  color: #669ec0;
 }
 
 .main-menu__link:active {
-  color: #766357;
-}
-
-.main-menu__link:not([href]) {
-  color: #766357;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd ;
 }
 
 .main-menu__link:not([href]):hover,
 .main-menu__link:not([href]):focus {
-  color: #604e43;
-}
-
-.main-menu__link:not([href]):active {
-  color: rgba(118, 99, 87, 0.3);
-}
-
-.main-menu__link:not([href]):hover,
-.menu__link:not([href]):focus {
-  background: none;
+  color: #81b3d2;
 }
 
 .main-menu--close-button {
@@ -134,7 +123,7 @@
     border-bottom: none;
     border-top: none;
     text-align: center;
-    padding: 25px 28px 21px 28px;
+    padding: 23px 16px 21px 12px;
     box-shadow: none;
     border-radius: 0;
     background-color: transparent;
@@ -155,15 +144,33 @@
 
     &:hover,
     &:focus {
-      color: $light-grey-blue;
-      background-color: $white;
+      color: #81b3d2;
+      background-color: #ffffff;
     }
 
     &:active {
-      color: rgba($black, 0.3);
+      color: rgba(0, 0, 0, 0.3);
       background-color: $white;
     }
   }
+
+   .main-menu__link:not([href]) {
+     color: #766357;
+    }
+
+   .main-menu__link:not([href]):hover,
+   .main-menu__link:not([href]):focus {
+     color: #604e43;
+    }
+
+   .main-menu__link:not([href]):active {
+     color: rgba(118, 99, 87, 0.3);
+    }
+
+   .main-menu__link:not([href]):hover,
+   .main-menu__link:not([href]):focus {
+     background: none;
+    }
 
   @media (min-width: $desktop-width) {
     .main-menu__link {

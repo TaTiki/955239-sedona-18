@@ -16,8 +16,9 @@
   text-decoration: none;
   width: 100%;
 
-  &:hover {
-    background-color: $faded-blue;
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
   }
 
   &:active {
@@ -32,7 +33,20 @@
 
 .button__text {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 18px;
   text-transform: uppercase;
+  padding-right: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .button--review {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--review {
+    width: 480px;
+  }
 }
