@@ -154,22 +154,22 @@
     }
   }
 
-   .main-menu__link:not([href]) {
-     color: #766357;
+    .main-menu__link:not([href]) {
+      color: #766357;
     }
 
-   .main-menu__link:not([href]):hover,
-   .main-menu__link:not([href]):focus {
-     color: #604e43;
+    .main-menu__link:not([href]):hover,
+    .main-menu__link:not([href]):focus {
+      color: #604e43;
     }
 
-   .main-menu__link:not([href]):active {
-     color: rgba(118, 99, 87, 0.3);
+    .main-menu__link:not([href]):active {
+      color: rgba(118, 99, 87, 0.3);
     }
 
-   .main-menu__link:not([href]):hover,
-   .main-menu__link:not([href]):focus {
-     background: none;
+    .main-menu__link:not([href]):hover,
+    .main-menu__link:not([href]):focus {
+      background: none;
     }
 
   @media (min-width: $desktop-width) {
