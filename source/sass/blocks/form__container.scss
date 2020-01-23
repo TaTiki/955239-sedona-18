@@ -36,10 +36,6 @@
     padding: 0;
   }
 
-  .form__container--impression {
-    margin-bottom: 51px;
-  }
-
   .form__container--impression .form__label-radio {
     margin-top: 5px;
   }
@@ -68,6 +64,7 @@
   .form__container--impression {
     order: -1;
     width: 324px;
+    margin-bottom: 51px;
   }
 
   .form__container--sights {
@@ -102,5 +99,4 @@
   .form__container--impression {
     width: 480px;
   }
-
 }

@@ -64,8 +64,7 @@
   }
 }
 
-@media (min-width: 1200px) {
-
+@media (min-width: $desktop-width) {
   .media-info {
     padding-left: 120px;
     padding-right: 120px;
