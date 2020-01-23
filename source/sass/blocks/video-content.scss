@@ -172,6 +172,15 @@
 
   .video-content__button {
     fill: #ffffff;
+
+    &:hover,
+    &:focus {
+      fill: #c2c2c2;
+    }
+
+    &:active {
+      fill: #949494;
+    }
   }
 
   .video-content__button--subtitle {
@@ -187,6 +196,17 @@
 @media (min-width: 1200px) {
   .video-content {
     padding-bottom: 84px;
+  }
+
+  .video-content__button {
+    &:hover,
+    &:focus {
+      fill: #333333;
+    }
+
+    &:active {
+      fill: #b8b8b8;
+    }
   }
 
   .video-content__header {

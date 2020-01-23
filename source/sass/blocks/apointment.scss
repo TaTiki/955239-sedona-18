@@ -22,41 +22,12 @@
   margin-bottom: 38px;
 }
 
-.apointment__button {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  font-size: 21px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #81b3d2;
-  border: 0;
-}
-
 @media (min-width: $tablet-width) {
   .apointment {
     padding-top: 56px;
     padding-bottom: 58px;
     margin: 0 auto;
     background-color: $white;
-  }
-
-  .apointment__button {
-    padding: 17px 8px;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 25px;
-    text-align: center;
-    border: 0;
-    text-transform: uppercase;
-    width: 455px;
-    position: relative;
-    left: 50.6%;
-    transform: translateX(-50%);
   }
 
   .apointment__title {
@@ -87,9 +58,5 @@
   .apointment__text {
     padding: 15px 20px 49px 29px;
     max-width: 43%;
-  }
-
-  .apointment__button {
-    left: 50.3%;
   }
 }

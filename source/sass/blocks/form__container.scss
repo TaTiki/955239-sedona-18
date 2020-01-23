@@ -1,0 +1,102 @@
+
+.form__container {
+  padding: 21px 18px;
+  margin: 0;
+  border: 0;
+}
+
+.form__container--fullname {
+  padding-bottom: 27px;
+}
+
+.form__container--communication {
+  padding-bottom: 19px;
+}
+
+.form__container--communication .form__group-wrapper {
+  margin-top: -16px;
+  padding-bottom: 16px;
+}
+
+.form__container--impression {
+  margin: 0 1px 12px 0;
+}
+
+.form__container--sights {
+  margin-bottom: -3px;
+}
+
+.form__container--impression .form__label-radio {
+  margin-top: 3px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form__container {
+    padding: 0;
+  }
+
+  .form__container--impression .form__label-radio {
+    margin-top: 5px;
+  }
+
+  .form__container--fullname {
+    position: relative;
+    width: 323px;
+    padding-left: 54px;
+  }
+
+  .form__container--fullname::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 310px;
+    background-color: #e5e5e5;
+    top: 0;
+    left: 0;
+  }
+
+  .form__container--communication {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .form__container--impression {
+    order: -1;
+    width: 324px;
+    margin-bottom: 51px;
+  }
+
+  .form__container--sights {
+    width: 100%;
+  }
+
+  .form__container--emotions {
+    width: 100%;
+  }
+
+  .form__container--review {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .form__container--button {
+    padding-top: 49px;
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #333333;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__container--fullname {
+    width: 479px;
+    padding-left: 78px;
+  }
+
+  .form__container--impression {
+    width: 480px;
+  }
+}

@@ -1,0 +1,15 @@
+
+.form__icon {
+  min-width: 58px;
+  background-color: #e5e5e5;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__icon--telephone {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.form__icon--email {
+  background-image: url("../img/icon-mail.svg");
+}

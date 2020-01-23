@@ -41,7 +41,6 @@
   .media {
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 36px;
   }
 
   .media-info {
@@ -65,11 +64,7 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .media {
-    padding-bottom: 60px;
-  }
-
+@media (min-width: $desktop-width) {
   .media-info {
     padding-left: 120px;
     padding-right: 120px;
