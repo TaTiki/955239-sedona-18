@@ -4,13 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="picturefill" href="js/picturefill.min.js">
 </head>
 <body>
     <div class="page-wrapper">
+      <section class="modal modal--failure">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">"Проверьте поля, выделенные красным, скооее всего вы забыли их заполнить"</p>
+        <button class="modal__button modal__button--failure button">ok</button>
+      </section>
+      <section class="modal modal--success">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__text modal__text--success">"Cпасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте."</p>
+      <div class="modal__footer">
+      <button class="modal__button modal__button--success button">Закрыть окно</button>
+      </div>
+    </section>
   <header class="main-header">
-    <nav class="main-menu main-menu__closed">
-      <button class="main-menu main-menu--close-button" aria-label="Закрыть меню" type=button></button>
+    <nav class="main-menu">
+      <button class="main-menu__close-button" aria-label="Закрыть меню" type=button></button>
       <ul class="main-menu__list">
         <li class="main-menu__item">
           <a class="main-menu__link" href="index.html">Главная</a>
@@ -34,13 +47,10 @@
         <img class="main-header__logo-picture" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
       </picture>
       </a>
-      <button class="burger-button" aria-label="Открыть меню" type= "button"></button>
+      <button class="burger-button burger-button--opened" aria-label="Открыть меню" type= "button"></button>
     </div>
     <div class="main-header__inner">
-        <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x 1x.jpg,img/bg-back-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, bg-back-tablet@2x.jpg 2x">
-          <img class="main-header__inner-fond" src="img/bg-back-mobile@1x.jpg 1x" srcset="img/bg-back-mobile@2x.jpg 2x">
-      <img class="main-header__title" src="img/text-sedona.svg" width="102" height="83" alt="City of Sedona">
+          <img class="main-header__title" src="img/text-sedona.svg" width="102" height="83" alt="City of Sedona">
     </div>
   </header>
   <main>
@@ -141,5 +151,7 @@
       </a>
     </p>
   </footer>
+  </div>
+  <script src="js/main.min.js"></script>
   </body>
-  </html>
+  </html">

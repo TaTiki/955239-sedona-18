@@ -116,6 +116,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form__legend {
+    margin-bottom: 70px;
+  }
+
   .form__legend--communication {
     margin-bottom: 78px;
 

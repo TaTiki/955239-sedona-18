@@ -1,26 +1,25 @@
 
 .burger-button {
   padding: 0;
-  background: none;
+  background-color: transparent;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
   border: transparent;
   cursor: pointer;
   position: relative;
   width: 23px;
-  height: 23px;
+  height: 22px;
   margin-right: 20px;
   left: 134px;
   top: 15px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 0;
-    width: 23px;
-    height: 4px;
-    background-color: #81b3d2;
-    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
-  }
+.burger-button--opened {
+  display: none;
+}
+
+.no-js.burger-button--opened {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

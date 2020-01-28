@@ -1,5 +1,14 @@
 .main-menu {
   @include container;
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.no-js .main-menu {
+  display: block;
 }
 
 .main-menu__list {
@@ -64,7 +73,7 @@
   color: #81b3d2;
 }
 
-.main-menu--close-button {
+.main-menu__close-button {
   position: absolute;
   content: "";
   background-color: $light-grey-blue;
@@ -74,6 +83,7 @@
   height: 23px;
   cursor: pointer;
   border: none;
+  z-index: 10;
 
   &::before,
   &::after {
@@ -93,6 +103,10 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.no-js .main-menu__close-button {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
