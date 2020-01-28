@@ -15,6 +15,10 @@
   }
 }
 
+.no-js .main-menu {
+  display: block;
+}
+
 .main-menu__list {
   margin: 0;
   list-style: none;
@@ -77,7 +81,7 @@
   color: #81b3d2;
 }
 
-.main-menu--close-button {
+.main-menu__close-button {
   position: absolute;
   content: "";
   background-color: $light-grey-blue;
@@ -106,6 +110,10 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.no-js .main-menu__close-button {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

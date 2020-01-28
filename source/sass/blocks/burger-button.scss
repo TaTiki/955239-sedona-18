@@ -1,7 +1,7 @@
 
 .burger-button {
   padding: 0;
-  background: none;
+  background: url("../img/icon-menu.svg");
   border: transparent;
   cursor: pointer;
   position: relative;
@@ -10,8 +10,16 @@
   margin-right: 20px;
   left: 134px;
   top: 15px;
+}
 
-  &::before {
+.burger-button--opened {
+  background: url("../img/icon-cross.svg");
+}
+
+.no-js.burger-button--opened {
+  display: none;
+}
+  /*&::before {
     content: "";
     position: absolute;
     top: 1px;
@@ -21,7 +29,7 @@
     background-color: #81b3d2;
     box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
   }
-}
+}*/
 
 @media (min-width: $tablet-width) {
   .burger-button {
