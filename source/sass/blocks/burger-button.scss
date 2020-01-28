@@ -1,19 +1,21 @@
 
 .burger-button {
   padding: 0;
-  background: url("../img/icon-menu.svg");
+  background-color: transparent;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
   border: transparent;
   cursor: pointer;
   position: relative;
   width: 23px;
-  height: 23px;
+  height: 22px;
   margin-right: 20px;
   left: 134px;
   top: 15px;
 }
 
 .burger-button--opened {
-  background: url("../img/icon-cross.svg");
+  display: none;
 }
 
 .no-js.burger-button--opened {
