@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="picturefill" href="js/picturefill.min.js">
   </head>
   <body>
       <div class="page-wrapper">
     <header class="main-header">
-      <nav class="main-menu main-menu__closed">
+      <nav class="main-menu main-menu--nojs">
           <button class="main-menu main-menu--close-button" aria-label="Закрыть меню" type=button></button>
         <ul class="main-menu__list">
           <li class="main-menu__item main-menu__item--active">
-            <a class="main-menu__link" href="#">Главная</a>
+            <a class="main-menu__link">Главная</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="photo.html">Фото и видео</a>
@@ -38,7 +39,7 @@
         <button class="burger-button" aria-label="Открыть меню" type= "button"></button>
       </div>
       <div class="main-header__intro">
-            <img class="main-header__intro-fond" src="img/bg-back-mobile@1x.jpg 1x" srcset="img/bg-back-mobile@2x.jpg 2x">
+            <img class="main-header__intro-fond" src="img/bg-back-mobile@1x.jpg 1x">
         <img class="main-header__title" src="img/text-sedona-index.svg" width="280" height="213" alt="City of Sedona">
       </div>
     </header>
@@ -148,4 +149,4 @@
     </footer>
       </div>
   </body>
-</html>
+</htmlclass="no-js">

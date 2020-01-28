@@ -1,5 +1,18 @@
 .main-menu {
   @include container;
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }
 
 .main-menu__list {
