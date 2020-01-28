@@ -99,5 +99,5 @@ gulp.task("images", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo ()
   ]))
-   .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img"));
 });
