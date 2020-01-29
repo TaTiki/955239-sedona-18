@@ -15,22 +15,22 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  color: #333333;
 }
 
 .feedback__form {
-  display: flex;
-  flex-direction: column;
   border-top: 1px solid #d6d6d6;
+  padding-top: 19px;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 35px;
+    padding-right: 51px;;
   }
 
   .feedback__form {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     padding-bottom: 55px;
     border-top: 0;
@@ -38,11 +38,12 @@
 
   .feedback__title {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+    padding: 0 84px 0 100px;
   }
 
   .feedback__description {
-    padding: 0 105px;
+    padding: 0 105px 0 126px;
   }
 }
 
@@ -50,12 +51,16 @@
   .feedback {
     width: 1200px;
     margin: 0 auto;
-    padding-left: 120px;
+    padding-left: 94px;
     padding-right: 120px;
   }
 
+  .feedback__form {
+    padding-bottom: 62px;
+  }
+
   .feedback__title {
-    margin-right: 9px;
+    margin-right: 24px;
   }
 
   .feedback__description {

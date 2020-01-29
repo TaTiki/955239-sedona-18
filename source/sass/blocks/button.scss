@@ -36,12 +36,13 @@
   font-size: 22px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-right: 7px;
+  padding-right: 4px;
 }
 
 @media (min-width: $tablet-width) {
   .button--review {
     width: 324px;
+    margin-left: 25px;
   }
 }
 

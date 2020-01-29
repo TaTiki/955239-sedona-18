@@ -11,6 +11,8 @@
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .features__info:nth-child(2) {
@@ -21,12 +23,17 @@
   color: $white;
   line-height: 23px;
   padding-top: 38px;
+
+  &::after {
+    color: inherit;
+  }
 }
 
 .features__info--bluing {
   padding-top: 40px;
   padding-bottom: 1px;
-  padding-right: 10px;
+  padding-left: 3px;
+  padding-right: 0;
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
@@ -46,6 +53,7 @@
 
   .features__info--bluing {
     padding: 45px 46px 35px;
+    height: 256px;
   }
 
   .features__info--blue {

@@ -12,17 +12,21 @@
   margin-bottom: -3px;
 }
 
+.form__legend--communication {
+  margin-bottom: 2px;
+}
+
 @media (min-width: $tablet-width) {
   .form__legend {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     font-size: 21px;
     width: 100%;
   }
 
   .form__legend--communication {
     position: relative;
-    margin-bottom: 30px;
-    padding-left: 20px;
+    margin-bottom: 29px;
+    padding-left: 36px;
     padding-right: 20px;
     text-align: center;
 
@@ -117,11 +121,19 @@
 
 @media (min-width: $desktop-width) {
   .form__legend {
-    margin-bottom: 70px;
+    margin-bottom: 55px;
+  }
+
+  .form__legend--review::after {
+    width: 299px;
+  }
+
+  .form__legend--review::before {
+    width: 299px;
   }
 
   .form__legend--communication {
-    margin-bottom: 78px;
+    margin-bottom: 75px;
 
     &::before {
       width: 280px;
@@ -132,7 +144,14 @@
     }
   }
 
+  .form__legend-fixed-content {
+    margin-top: -4px;
+    margin-left: 19px;
+  }
+
   .form__legend--sights {
+    margin-bottom: 45px;
+
     &::before {
       width: 280px;
     }

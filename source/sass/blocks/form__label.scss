@@ -7,7 +7,7 @@
 }
 
 .form__label--padding {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   margin-left: 22px;
 }
 
@@ -20,10 +20,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 80px;
 }
 
 .form__label-radio::before {
-  position: relative;
+  position: absolute;
   width: 56px;
   height: 56px;
   background-color: #f2f2f2;
@@ -37,12 +40,10 @@
 .form__label-radio::after {
   content: "";
   position: absolute;
-  top: 28px;
-  left: 29px;
+  top: 17px;
+  left: 19px;
   width: 22px;
   height: 22px;
-  margin-top: -11px;
-  margin-left: -11px;
   background-color: #333333;
   border-radius: 50%;
   display: none;
@@ -94,11 +95,16 @@
   }
 
   .form__label.form__label-radio {
-    margin-bottom: 20px;
+  text-align: left;
+  margin-bottom: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 77px;
   }
 
   .form__label--padding {
-    margin-bottom: 6px;
+    margin-left: 48px;
+    margin-bottom: 4px;
   }
 }
 
@@ -108,9 +114,14 @@
   }
 
   .form__label.form__label-checkbox {
-    width: 238px;
+    width: 259px;
     margin-bottom: 47px;
-    margin-right: -33px;
+    margin-right: 0;
+
+    &:nth-of-type(4n) {
+      width: 201px;
+      margin-left: -22px;
+    }
   }
 
   .form__label-radio:hover::before,
@@ -124,6 +135,6 @@
 
   .form__label--padding {
     margin: 0;
-    margin-right: 16px;
+    margin: 0 15px 0 23px;
   }
 }

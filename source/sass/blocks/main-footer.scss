@@ -1,6 +1,5 @@
 .main-footer {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 23px 22px 22px 28px;
   text-transform: uppercase;
   line-height: 26px;
   color: #000000;
@@ -10,8 +9,6 @@
   margin-right: auto;
   margin-left: auto;
   width: 320px;
-  padding-top: 41px;
-  padding-bottom: 23px;
 
   @include container;
 
@@ -47,48 +44,19 @@
   fill: currentColor;
 }
 
-.social__link {
-  margin: 14px 8px 25px -2px;
-  display: flex;
-  width: 46px;
-  height: 48px;
-  color: $white;
-  background-color: $light-grey-blue;
-  background-position: center;
-  fill: $white;
-
-  @media (min-width: $tablet-width) {
-    margin: 6px 7px -4px -1px;
-  }
-}
-
-.social__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  fill: $white;
-}
-
-.social__link--facebook {
-  background-image: url("../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  fill: $white;
-}
-
-.social__link--youtube {
-  background-image: url("../img/icon-youtube.svg");
-  background-repeat: no-repeat;
-  fill: $white;
-}
-
 .main-footer__copyright {
   display: flex;
   font-size: 14px;
   font-weight: 400;
   line-height: 40px;
   margin: 0;
-  margin-top: 7px;
+  margin-top: 52px;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
 }
 
 .main-footer__copyright-icon {
@@ -106,15 +74,15 @@
 
 .main-footer__hashtag {
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 37px;
   margin-right: 7px;
   margin-top: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 19px;
+    margin-top: 7px;
     margin-left: -2px;
-    margin-bottom: 10px;
-    margin-right: 1px;
+    margin-bottom: 0;
+    margin-right: 2px;
   }
 }
 
@@ -122,7 +90,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     left: 21%;

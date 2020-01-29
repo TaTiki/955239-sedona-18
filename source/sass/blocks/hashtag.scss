@@ -8,3 +8,9 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $desktop-width) {
+  .hashtag {
+    margin-top: 10px;
+  }
+}

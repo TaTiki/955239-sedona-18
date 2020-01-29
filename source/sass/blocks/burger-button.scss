@@ -9,16 +9,12 @@
   position: relative;
   width: 23px;
   height: 22px;
-  margin-right: 20px;
+  margin-right: 9px;
   left: 134px;
   top: 15px;
 }
 
-.burger-button--opened {
-  display: none;
-}
-
-.no-js.burger-button--opened {
+.no-js .burger-button {
   display: none;
 }
 

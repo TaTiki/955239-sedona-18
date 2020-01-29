@@ -10,11 +10,14 @@
 .form__group--column {
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 9px;
+}
+
+.form__group--phone {
+  margin-bottom: 11px;
 }
 
 .form__group-wrapper--context {
-  margin: -4px 3px 25px 0;
+  margin: -4px 3px 4px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,7 +26,7 @@
   }
 
   .form__group-wrapper--context {
-    margin-bottom: 52px;
+    margin-bottom: 29px;
   }
 }
 
@@ -45,10 +48,10 @@
   }
 
   .form__group--phone {
-    width: 42%;
+    width: 43%;
   }
 
   .form__group--email {
-    width: 50%;
+    width: 51%;
   }
 }

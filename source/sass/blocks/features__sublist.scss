@@ -1,26 +1,20 @@
 
 .features__sublist {
   width: 100%;
-  padding: 29px 0;
+  padding: 26px 0 13px;
   margin: 0;
   list-style: none;
   content: none;
 }
 
 .features__sublist .features__item {
-  padding-left: 65px;
-  padding-top: 3px;
-  padding-bottom: 0;
-  padding-right: 20px;
+  padding: 7px 19px 0 73px;
   text-align: left;
 }
 
-.features__sublist .features__item:nth-child(3) {
-  order: 4;
-}
-
 .features__sublist .features__text {
-  padding: 20px;
+  padding-right: 20px;
+  padding-bottom: 23px;
   padding-left: 0;
   padding-top: 0;
 }
@@ -28,6 +22,7 @@
 @media (min-width: $tablet-width) {
   .features__sublist {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 59px;
     padding-bottom: 63px;
   }

@@ -5,10 +5,7 @@
 }
 
 .media-info {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 37px;
-  padding-bottom: 28px;
+  padding: 39px 22px 28px 28px;
   text-align: center;
 }
 
@@ -29,7 +26,7 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  padding: 0 5px 0 2px;
+  color: #333333;
 }
 
 .media__gallery {
@@ -68,7 +65,7 @@
   .media-info {
     padding-left: 120px;
     padding-right: 120px;
-    padding-top: 113px;
+    padding-top: 115px;
   }
 
   .media-info__description {

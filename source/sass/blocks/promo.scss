@@ -28,13 +28,15 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  color: #333333;
+  padding-left: 10px;
 }
 
 .promo__title {
   margin: 0;
   position: relative;
-  margin-bottom: 26px;
-  padding: 0 20px 0 16px;
+  margin-bottom: 28px;
+  padding: 0 3px 0 16px;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
@@ -43,7 +45,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     background: $white;
-    padding-top: 48px;
+    padding-top: 50px;
     padding-bottom: 58px;
 
     &::after {
@@ -53,14 +55,14 @@
 
   .promo__title {
     margin-bottom: 37px;
-    padding: 0 87px 0 79px;
+    padding: 0 93px 0 83px;;
     font-size: 20px;
     line-height: 25px;
   }
 
   .promo__description {
     font-size: 14px;
-    padding: 1px 126px 1px 128px;
+    padding: 2px 128px 1px 128px;
     line-height: 9px;
   }
 }

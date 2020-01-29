@@ -10,6 +10,7 @@
 @media (min-width: $tablet-width) {
   .map {
     width: $tablet-width;
+    margin-bottom: -8px;
   }
 
   .map__picture {

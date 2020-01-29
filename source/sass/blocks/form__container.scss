@@ -9,17 +9,14 @@
   padding-bottom: 27px;
 }
 
-.form__container--communication {
-  padding-bottom: 19px;
-}
-
 .form__container--communication .form__group-wrapper {
-  margin-top: -16px;
-  padding-bottom: 16px;
+  padding-bottom: 3px;
 }
 
 .form__container--impression {
-  margin: 0 1px 12px 0;
+  margin: 0 1px 17px 0;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 14px;
 }
 
 .form__container--sights {
@@ -30,6 +27,13 @@
   margin-top: 3px;
 }
 
+.form__container--impression .form__legend {
+  padding-bottom: 0;
+}
+
+.form__container--button {
+  padding-bottom: 39px;
+}
 
 @media (min-width: $tablet-width) {
   .form__container {
@@ -42,8 +46,8 @@
 
   .form__container--fullname {
     position: relative;
-    width: 323px;
-    padding-left: 54px;
+    width: 349px;
+    padding-left: 83px;
   }
 
   .form__container--fullname::before {
@@ -53,7 +57,7 @@
     height: 310px;
     background-color: #e5e5e5;
     top: 0;
-    left: 0;
+    left: 24px;
   }
 
   .form__container--communication {
@@ -64,7 +68,9 @@
   .form__container--impression {
     order: -1;
     width: 324px;
-    margin-bottom: 51px;
+    margin-bottom: 48px;
+    padding-left: 26px;
+    border: none;
   }
 
   .form__container--sights {
@@ -92,10 +98,18 @@
 
 @media (min-width: $desktop-width) {
   .form__container--fullname {
-    width: 479px;
-    padding-left: 78px;
+    margin-left: 7px;
+    padding-left: 98px;
+    width: 50%;
+
+    &::before {
+      left: 17px;
+    }
   }
 
+  .form__container--emotions {
+    padding-left: 27px;
+  }
   .form__container--impression {
     width: 480px;
   }

@@ -5,6 +5,7 @@
   width: 100%;
   font-size: 21px;
   line-height: 18px;
+  font-weight: bold;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -17,14 +18,13 @@
   .apointment__button {
     padding: 17px 8px;
     font-size: 21px;
-    font-weight: bold;
     line-height: 25px;
     text-align: center;
     border: 0;
     text-transform: uppercase;
     width: 455px;
     position: relative;
-    left: 50.6%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
